@@ -75,13 +75,13 @@ const handleClickNav = () => {
             exit="exit"
             className="fixed flex h-[100vh] bg-black bg-opacity-90 text-white items-center justify-around flex-col w-full  top-0 left-0"
           >
-            <div className="flex items-center justify-start h-[10%] text-gray-500 border-b border-gray-500 w-[80%]">
+            <div className="flex items-center justify-start h-[10%] text-gray-500 border-b border-gray-500 w-[80%] mb-10">
               <Link href="/" className={clsx()} onClick={toggleOpen}>
                 Home
               </Link>
             </div>
 
-            <div className="flex mb:justify-around justify-around p-1 items-center h-[20%] sm:w-[80%] w-[100%] flex-col text-xl gap-8 relative">
+            <div className="flex mb:justify-around justify-center   items-center h-[20%] sm:w-[80%] w-[100%] flex-col text-xl gap-6 relative">
               <motion.div {...linkAnimation} className="opacity-100  z-50">
                 <FlyOutLink
                   FlyOutContent={FlyOutMenu}
@@ -123,7 +123,7 @@ const handleClickNav = () => {
                 />
               </motion.div>
             </div>
-            <div className="flex text-xs gap-8 items-center h-[20%]">
+            <div className="flex text-xs gap-8 items-center mb-10 h-[20%]">
               <motion.div {...linkAnimation} className="flex items-center neon-text gap-1">
                 <AiFillTikTok size="1.4rem" />
                 <Link href="/none" onClick={toggleOpen}>

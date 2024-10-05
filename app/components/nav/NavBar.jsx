@@ -81,7 +81,7 @@ const handleClickNav = () => {
               </Link>
             </div>
 
-            <div className="flex mb:justify-around justify-around items-center h-[20%] sm:w-[80%] w-[100%] flex-col text-xl gap-8 relative">
+            <div className="flex mb:justify-around justify-around p-1 items-center h-[20%] sm:w-[80%] w-[100%] flex-col text-xl gap-8 relative">
               <motion.div {...linkAnimation} className="opacity-100  z-50">
                 <FlyOutLink
                   FlyOutContent={FlyOutMenu}

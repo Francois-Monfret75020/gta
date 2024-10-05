@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.body {   font-family: var(--gta-font);}
+
+.title {
+  font-family: var(--font-montserrat);
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 200; /* font-thin */
+  text-transform: uppercase; /* uppercase */
+  line-height: 1.625; /* leading-relaxed */
+}
+
+.text {
+  font-family: var(--font-oswald);
+  font-weight: 200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.title-info {
+  font-family: var(--font-montserrat);
+  font-size: 1.5rem; /* text-xl */
+  font-weight: 200; /* font-thin */
+  text-transform: uppercase; /* uppercase */
+  line-height: 1.625; /* leading-relaxed */
+  color: white;
+}
+
+.text-info {
+  font-family: var(--font-oswald);
+  color: white;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 200; /* font-thin */
+
+}
+
+@media (min-width: 768px) { /* md */
+  .text-info {
+    font-size: 1.5rem; /* text-2xl */
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .text-info {
+    font-size: 1.875rem; /* text-3xl */
+  }
+}
+
+/* globals.css */
+body {
+  touch-action: manipulation;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  touch-action: manipulation;
+}
+
+:root {
+  --clr-neon: #00fe9b;
+  --clr-bg: #00fe9b;
+  --clr-bg-booking-btn: #f66bdf;
+}
+
+.neon-button {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+}
+
+.neon-button-desktop {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+}
+
+
+.neon-button-booking {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+  font-family: var(--font-montserrat);
+}
+.neon-logo:hover {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  color: var(--clr-bg);
+  border-radius: 10rem;
+}
+
+.neon-text {
+  text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
+  font-family: var(--font-montserrat);
+  color: var(--clr-bg);
+}
+
+
+
+.neon-text-white {
+  text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
+  font-family: var(--font-oswald);
+  color: white;
+  
+}
+
+.neon-text-green {
+  text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
+  font-family: var(--gta-font);
+  color: var(--clr-neon);
+  
+}
+
+
+
+
+.neon-title-white {
+  text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
+  font-family: var(--gta-font);
+  color: white;
+  
+}
+
+
+.neon-title-green {
+  text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
+  font-family: var(--gta-font);
+  color: var(--clr-bg);
+  
+}
+
+.neon-logo-tik-tok:hover {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.1em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  color: var(--clr-bg);
+  border-radius: 6px;
+  width: auto;
+}
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  /* background: var(--clr-neon); */
+  top: 120%;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+
+
+.neon-button-booking::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  /* background: var(--clr-neon); */
+  top: 120%;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button-booking::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button-booking:hover,
+.neon-button-booking:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button-booking::before,
+.neon-button-booking::before {
+  opacity: 1;
+}
+
+.neon-button-booking:hover::after,
+.neon-button-booking:focus::after {
+  opacity: 1;
+}

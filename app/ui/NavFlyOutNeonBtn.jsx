@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import { TbTriangleFilled } from "react-icons/tb";
 
+
 const NavFlyOutNeonBtn = ({ text, event ,onClick, nav }) => {
   const pathname = usePathname();
   const initialBasePath = `/${pathname.split("/")[1]}`;
@@ -12,18 +13,23 @@ const NavFlyOutNeonBtn = ({ text, event ,onClick, nav }) => {
   const href = "/prestation";
 
   console.log("nav", nav);
+  console.log("pathname", pathname);  
+  console.log("basePath", basePath);  
+  console.log("href", href);
+  
+  
   
 
 
   return (
-    <div id="container" className="w-auto items-center gap-x-3 flex relative" >
-      {pathname === href && (
+    <div id="container" className="w-auto items-center gap-x-3 flex relative z-50"  >
+      {basePath === href && (
         <TbTriangleFilled
           className="absolute text-neon"
-          size={15} // Adjust the size as needed
+          size={20} // Adjust the size as needed
           style={{
             top: "50%",
-            left: "10%",
+            left: "-40px",
             transform: "translateY(-50%) rotate(90deg)", // Rotate 90 degrees to the right
           }}
         />
@@ -31,7 +37,7 @@ const NavFlyOutNeonBtn = ({ text, event ,onClick, nav }) => {
       <div
         className={clsx(
           "relative p-2 flex justify-center items-center w-[12rem]  md:min-w-[6rem] lg:min-w-[8rem] max-w-[13rem]  cursor-pointer bg-transparent overflow-hidden text-neon  lg:py-1 px-1 text-lg  font-thin ",
-          { "border-2 rounded-md border-neon neon-button": pathname === href }
+          { "border-2 rounded-md border-neon neon-button": basePath === href }
         )}
         onClick={onClick}
       >

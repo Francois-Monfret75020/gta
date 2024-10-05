@@ -12,6 +12,7 @@ const NavNeonBtn = ({ text, event, href, toggleOpen, OnClickNav }) => {
 
 
   const combinedClickHandler = () => {
+
     handleClick();
     if (OnClickNav) {
       OnClickNav(); // Appel de la fonction de rappel passée par le parent
@@ -29,13 +30,13 @@ const NavNeonBtn = ({ text, event, href, toggleOpen, OnClickNav }) => {
 
   return (
     <div
-      className="w-auto items-center gap-x-3 flex relative z-10"
+      className="w-auto items-center gap-x-3 flex relative "
       onClick={combinedClickHandler}
     >
       {pathname === href && (
         <TbTriangleFilled
           className="absolute text-neon"
-          size={30} // Adjust the size as needed
+          size={20} // Adjust the size as needed
           style={{
             top: "50%",
             left: "-40px",
@@ -43,7 +44,7 @@ const NavNeonBtn = ({ text, event, href, toggleOpen, OnClickNav }) => {
           }}
         />
       )}
-      <audio ref={audioRef} src="/sound.mp3" preload="auto" />
+      {/* <audio ref={audioRef} src="/sound.mp3" preload="auto" /> */}
       <div
         className={clsx(
           "relative p-2 flex justify-center items-center w-[12rem] md:min-w-[6rem] lg:min-w-[8rem] max-w-[13rem] cursor-pointer bg-transparent overflow-hidden text-neon lg:py-1 px-1 text-lg font-thin",

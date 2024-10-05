@@ -81,8 +81,8 @@ const handleClickNav = () => {
               </Link>
             </div>
 
-            <div className="flex mb:justify-around justify-center items-center h-[20%] sm:w-[80%] w-[100%] flex-col text-xl gap-8 relative">
-              <motion.div {...linkAnimation} className="opacity-100">
+            <div className="flex mb:justify-around justify-around items-center h-[20%] sm:w-[80%] w-[100%] flex-col text-xl gap-8 relative">
+              <motion.div {...linkAnimation} className="opacity-100  z-50">
                 <FlyOutLink
                   FlyOutContent={FlyOutMenu}
                   toggleOpen={toggleOpen}
@@ -123,20 +123,20 @@ const handleClickNav = () => {
                 />
               </motion.div>
             </div>
-            <div className="flex text-xs gap-8 items-center">
-              <motion.div {...linkAnimation} className="flex items-center gap-1">
+            <div className="flex text-xs gap-8 items-center h-[20%]">
+              <motion.div {...linkAnimation} className="flex items-center neon-text gap-1">
                 <AiFillTikTok size="1.4rem" />
                 <Link href="/none" onClick={toggleOpen}>
                   Tik Tok
                 </Link>
               </motion.div>
-              <motion.div {...linkAnimation} className="flex items-center gap-1">
+              <motion.div {...linkAnimation} className="flex items-center neon-text gap-1">
                 <FaInstagram size="1.4rem" />
                 <Link href="/none" onClick={toggleOpen}>
                   Instagram
                 </Link>
               </motion.div>
-              <motion.div {...linkAnimation} className="flex items-center gap-1">
+              <motion.div {...linkAnimation} className="flex items-center neon-text  gap-1">
                 <FaFacebook size="1.4rem" />
                 <Link href="/none" onClick={toggleOpen}>
                   Facebook

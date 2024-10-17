@@ -4,66 +4,78 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdOutlineMailOutline } from "react-icons/md";
 
+const contactMethods = [
+  {
+    icon: <IoLogoWhatsapp size={25} />,
+    href: "https://wa.me/33631995330",
+    text: "Via WhatsApp",
+    type: "external",
+  },
+  {
+    icon: <LuPhoneCall size={25} />,
+    href: "tel:+33631995330",
+    text: "06 31 99 53 30",
+    type: "internal",
+  },
+  {
+    icon: <MdOutlineMailOutline size={25} />,
+    href: "mailto:cocktail@event.com",
+    text: "cocktail@event.com",
+    type: "internal",
+  },
+];
+
 const BookingFull = () => {
   return (
     <div
       id="all-booking-type-conainter"
-      className="  h-auto lg:w-screen   flex lg:flex-row flex-col "
+      className="h-auto lg:w-screen flex lg:flex-row flex-col"
     >
       <div
         id="whatsapp-containeur"
-        className=" flex flex-col h-full lg:h-screen   items-center justify-center  lg:w-1/2  text-center lg:mt-10"
+        className="flex flex-col h-full lg:h-screen items-center justify-center lg:w-1/2 text-center lg:mt-8"
       >
-        {" "}
-        <h2 className="p-8 py-8 mt-4 font-bold tracking-tight text-xl pt-20 lg:pt-10 font-oswald neon-title-green">
+        <h2 className="p-8 py-8 mt-4 font-bold tracking-tight text-5xl pt-20 lg:pt-10 font-oswald neon-title-green">
           Contactez-nous
         </h2>
-        <p className="p-4 lg:w-[70%]  lg:height-[40%] w-[85%] leading-8 relative lg:-bottom-[2rem] neon-text-white">
+        <p className="p-4 lg:w-[70%] lg:height-[40%] w-[85%] text:xl md:text-2xl leading-8 relative lg:-bottom-[2rem] neon-text-white">
           Pour obtenir un devis rapidement, il suffit de nous contacter via
-          WhatsApp ou par telephone, email. Vous pouvez aussi directement
-          resever via Calendly. Nous serons ravis de répondre a toute vos
-          questions et de vous fournir un devis dans les plus bref délais.{" "}
+          WhatsApp ou par téléphone, email. Vous pouvez aussi directement
+          réserver via Calendly. Nous serons ravis de répondre à toutes vos
+          questions et de vous fournir un devis dans les plus brefs délais.
           <br /> <br /> Merci d’avance ❤️
           <br /> <br /> Bar Events | Votre prestataire de bars à cocktails.
         </p>
         <div
           id="whatps-content"
-          className=" w-full h-full   items-center flex flex-col justify-center mt-8 gap-y-4 lg:relative lg:top-[20px]"
+          className="w-full h-full items-center flex flex-col justify-center mt-8 gap-y-8 lg:relative lg:top-[-192px]"
         >
-          <span
-            className=" neon-button bg-neon hover:text-black flex items-center justify-center p-4 rounded-md gap-x-4 w-[30%] min-w-[270px] "
-         
-          >
-            {" "}
-            <IoLogoWhatsapp size={25} />
-            <a
-              href="https://wa.me/33631995330"
-              target="_blank"
-              rel="noopener noreferrer"
+          {contactMethods.map((method, index) => (
+            <span
+              key={index}
+              className="bg-neon hover:text-black flex items-center justify-center p-6 rounded-md gap-x-4 w-full max-w-64"
             >
-              Via WhatsApp
-            </a>
-          </span>
-          <span className=" flex items-center justify-center p-4 rounded-md gap-x-4 neon-button hover:text-black  bg-neon w-[30%] min-w-[270px]">
-            {" "}
-            <LuPhoneCall size={25} />
-            <a href="tel:+33631995330">06 31 99 53 30</a>
-          </span>
-          <span className=" flex items-center justify-center p-4 rounded-md gap-x-4 neon-button hover:text-black  bg-neon w-[30%]  min-w-[270px]">
-            {" "}
-            <MdOutlineMailOutline size={25} />
-            <a href="mailto:cocktail@event.com">cocktail@event.com</a>
-          </span>
+              {method.icon}
+              <a
+                href={method.href}
+                target={method.type === "external" ? "_blank" : "_self"}
+                rel={method.type === "external" ? "noopener noreferrer" : ""}
+                className="flex-1 text-center text-lg"
+              >
+                {method.text}
+              </a>
+            </span>
+          ))}
         </div>
       </div>
 
       <div
         id="calendy-containeur"
-        className=" flex flex-col lg:w-1/2 h-full  mt-8  lg:mt-10 "
+        className="flex flex-col lg:w-1/2 h-full mt-8 lg:mt-10"
       >
         <div
           id="calendy-content"
-          className=" w-full h-[100%] bg-transparent items-center flex justify-center"
+          className="w-full h-[100%] bg-transparent items-center flex justify-center"
         >
           <Calendy />
         </div>

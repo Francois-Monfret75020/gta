@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <main className="relative bg-black">
+      <main className="relative bg-black overflow-x-hidden">
         <AnimatePresence mode="wait">
           {isLoaded && <Preloader />}
         </AnimatePresence>

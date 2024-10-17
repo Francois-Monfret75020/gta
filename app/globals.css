@@ -7,15 +7,18 @@
 
 .title {
   font-family: var(--font-montserrat);
-  font-size: 1.25rem; /* text-xl */
-  font-weight: 200; /* font-thin */
+
+}
+
+.sub-title {
+  font-family: var(--font-montserrat);
   text-transform: uppercase; /* uppercase */
   line-height: 1.625; /* leading-relaxed */
 }
 
 .text {
   font-family: var(--font-oswald);
-  font-weight: 200;
+
 }
 
 html {
@@ -77,10 +80,16 @@ img, video {
   position: relative;
 }
 
-.neon-button-desktop {
+.neon-footer {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  box-shadow: inset 0 -0.5em 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
   position: relative;
+}
+
+.neon-button-desktop {
+  /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
 }
 
 

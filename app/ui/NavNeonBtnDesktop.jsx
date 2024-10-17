@@ -18,32 +18,23 @@ const NavNeonBtnDesktop = ({ text, event, href }) => {
   return (
     <Link
       href={href}
-      className="w-auto items-center gap-x-3 flex relative"
+      className="w-[10rem] items-center flex justify-center  relative "
       onClick={handleClick}
-
     >
       <audio ref={audioRef} src="/sound.mp3" preload="auto" />
-      <div
-        className={clsx(
-          "relative p-2 flex justify-center items-center w-[9rem] cursor-pointer bg-transparent overflow-visible lg:py-1 px-1 text-lg font-thin",
-          { "neon-button-desktop rounded-md border-2 border-neon ": pathname === href }
-        )}
-      >
-        {pathname === href && (
-          <TbTriangleFilled
-            className="absolute z-10"
-            size={15} // Adjust the size as needed
-            style={{
-              top: "50%",
-              left: "-20%",
-              transform: "translateY(-50%) rotate(90deg)", // Rotate 90 degrees to the right
-              color: "#00fe9b",
-            }}
-          />
-        )}
-         {text}
-        </div>
      
+        <motion.div
+          className="absolute inset-0 bg-transparent  border-2 border-neon neon-button-desktop rounded-md origin-left"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: pathname === href || event  ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
+        />
+        <div className="md:text-base lg:text-lg px-6 py-4">
+     
+            {text}
+
+        </div>
+    
     </Link>
   );
 };

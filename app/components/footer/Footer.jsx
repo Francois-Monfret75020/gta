@@ -7,7 +7,7 @@ import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div id="footer-container" className="flex flex-col   w-full  gap-y-10 ">
+    <div id="footer-container" className="flex flex-col justify-center  md:h-[26rem] h-[47rem]  w-full  gap-y-10 bg-blacko">
       <div className="flex flex-col sm:flex-row  sm:justify-around w-full ">
         <section id="contact" className="flex flex-col text-gray-500   mb-1 p-4 gap-y-3 ">
           <div className="font-light text-gray-500 text-xl mb-1 neon-text">CONTACT</div>
@@ -97,7 +97,7 @@ const Footer = () => {
       </div>
       <section
         id="mention-cookie"
-        className="  flex justify-center  items-center gap-x-8"
+        className="  flex justify-center  items-center h-20 gap-x-8"
       >
         <Link
           href="/mentions"

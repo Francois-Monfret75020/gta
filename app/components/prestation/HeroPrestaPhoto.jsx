@@ -9,7 +9,7 @@ const HeroPresta = ({ src, height, text, alt, info }) => {
 
 
   return (
-    <div ref={ref} className="relative h-[70vh]" style={{ height: height }}>
+    <div ref={ref} className="relative sm:h-[60vh] h-[30vh]" style={{ height: height }}>
       <Image
         src={src}
         alt={alt}

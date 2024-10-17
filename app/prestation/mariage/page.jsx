@@ -11,9 +11,10 @@ import { PrestaTextGames } from "../../content/Presta Page Content/prestaPageTex
 import { GamesContent } from "../../content/Presta Page Content/prestaPageText";
 import { ListPrestaMariageContent } from "../../content/Presta Page Content/prestaPageText";
 
+
 const presta = () => {
   return (
-    <main className="h-full w-screen">
+    <main className="h-full w-screen bg-black overflow-x-hidden ">
       <HeroPrestaPhoto
         src={HeroPrestaMariage.src}
         alt={HeroPrestaMariage.alt}
@@ -49,7 +50,7 @@ const presta = () => {
       </div>
       <div
         id="card-container"
-        className="w-full h-auto flex flex-col sm:flex-row  bg-black justify-center items-center"
+        className="w-full h-auto pb-10 flex flex-col lg:flex-row  px-4 bg-black justify-center gap-y-12 md:gap-x-20 items-center "
       >
         {GamesContent.map((game, index) => (
           <CardDemo
@@ -57,6 +58,7 @@ const presta = () => {
             title={game.title}
             text={game.text}
             url={game.url} // Pass the entire array of URLs
+            initialX={index % 2 === 0 ? '-100%' : '100%'} 
           />
         ))}
       </div>

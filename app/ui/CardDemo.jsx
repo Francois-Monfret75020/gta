@@ -1,40 +1,41 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import CtaBtn from "../ui/CtaBtn";
 
-import { IKVideo } from "imagekitio-next";
-import { cn } from "../lib/utils";
-
-export function CardDemo({ title, text, url }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // L'animation se déclenche lorsque l'élément entre dans la vue
-
-  const backgroundImage = url[0];
-  const hoverBackgroundImage = url[2];
+const CardDemo = ({ title, text, initialX }) => {
+  const imageUrl =
+    "https://ik.imagekit.io/xgjpkseg3/BarCocktail/rodeo-project-management-software-fu4JgXaMUDQ-unsplash.jpg?updatedAt=1727706831693";
+  const refCard = useRef(null);
+  const isInView = useInView(refCard, { once: true });
 
   return (
-    <div className="max-w-xs w-full">
-     <div
-        className={cn(
-          "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
-          "bg-[url(https://ik.imagekit.io/xgjpkseg3/BarCocktail/bao-truong-hYrnz92-bpY-unsplash.jpg?updatedAt=1727706189607)] bg-cover",
-          // Preload hover image by setting it in a pseudo-element
-          "before:bg-[url(https://ik.imagekit.io/xgjpkseg3/BarCocktail/ezgif.com-effects.gif?updatedAt=1727706113114)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
-          "hover:bg-[url(https://ik.imagekit.io/xgjpkseg3/BarCocktail/ezgif.com-effects.gif?updatedAt=1727706113114)]",
-          "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-50",
-          "transition-all duration-500"
-        )}
-      >
-        <div className="text relative z-50">
-          <h3 className="font-bold text-xl md:text-3xl text-gray-50 relative">
-            {title}
-          </h3>
-          <p className="font-normal text-base text-gray-50 relative my-4">
-            {text}
-          </p>
+    <motion.div
+      ref={refCard}
+      className="lg:w-[25%] w-[80%]"
+      initial={{ x: initialX }}
+      animate={isInView ? { x: 0 } : { x: initialX }}
+      transition={{ type: "spring", stiffness: 50 }}
+    >
+      <div className="relative w-full h-96 rounded-md overflow-hidden shadow-xl">
+        <img
+          src={imageUrl}
+          alt="Card Image"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute flex top-0 left-0 items-center md:min-h-[7.5rem] right-0 p-4 bg-black bg-opacity-50 text-white">
+          <div className="flex flex-col gap-y-4 w-[50%]">
+            {" "}
+            <h3 className="font-bold text-xl">{title}</h3>
+            <p className="text-base font-montserrat">{text}</p>
+          </div>
+          <div className="flex  justify-end items-center h-full w-[50%]">
+            <CtaBtn text="CHOISIR" className="w-[10%]" />
+          </div>
         </div>
       </div>
-    </div>
+      <div className="mt-4 flex justify-center"></div>
+    </motion.div>
   );
-}
+};
 
 export default CardDemo;

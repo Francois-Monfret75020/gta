@@ -20,14 +20,12 @@ const FlyOutMenu = ({ toggleOpen }) => {
       audioRef.current.play();
 
    
-      setTimeout(() => {
-        toggleOpen();
-      }, 2500); // Délai de 1.5 secondes (1500 millisecondes)
+   
     }
   };
 
   return (
-    <div className="flex flex-col h-auto p-6 shadow-xl gap-x-6  ">
+    <div className="flex flex-col h-[25rem] p-10 shadow-xl justify-center gap-y-4  ">
           <audio ref={audioRef} src="/sound.mp3" preload="auto" />
       {data.map((item, index) => (
         <div
@@ -35,12 +33,12 @@ const FlyOutMenu = ({ toggleOpen }) => {
           className="relative mb-4 w-full flex justify-around gap-y-3"
           onClick={combinedClickHandler}
         >
-          <Link href={item.link} onClick={toggleOpen}>
+          <Link href={item.link} >
             <div className="flex flex-col items-center justify-center relative cursor-pointer h-full">
               <span
                 className={clsx(
-                  "top-12 text-center bg-opacity-50 text-neon-white hover:text-glow p-1",
-                  { "bg-neon rounded-md px-2 py-2": pathname === item.link } // Classe conditionnelle
+                  "top-12 text-center bg-opacity-50 text-neon-white hover:text-glow p-1 md:text-base lg:text-lg",
+                  { "bg-neon rounded-md px-2": pathname === item.link } // Classe conditionnelle
                 )}
               >
                 {item.navTitlle}

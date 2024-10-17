@@ -34,7 +34,7 @@ const AniamtionText = ({
 
   return (
     <Wrapper className={className}>
-      <span className="sr-only">{text}</span>
+      <span className="sr-only ">{text}</span>
       <motion.span
         ref={ref}
         initial="hidden"
@@ -56,7 +56,7 @@ const AniamtionText = ({
               <motion.span
                 key={wordIndex}
                 variants={defaultAnimation}
-                style={{ display: "inline-block" }}
+                style={{ display : "inline-block" }}
               >
                 {word}&nbsp;
               </motion.span>

@@ -20,7 +20,7 @@ const config: Config = {
         greeno: "#00fe9b",
         blacko: "#001D1B",
         neonGlow: "#02c435",
-        neon: "#00fe9b",
+        neon: "#69BE29",
         pinkGta: "#c812aa",
       },
       backgroundImage: {

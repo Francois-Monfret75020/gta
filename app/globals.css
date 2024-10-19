@@ -109,7 +109,7 @@ img, video {
 .neon-text {
   text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
   font-family: var(--font-montserrat);
-  color: #31BD1B;
+  color: var(--clr-bg);
 }
 
 

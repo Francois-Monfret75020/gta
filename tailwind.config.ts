@@ -17,10 +17,10 @@ const config: Config = {
       },
       colors: {
         creme: "#E9E3D1",
-        greeno: "#00fe9b",
+        greeno: "#31BD1B",
         blacko: "#001D1B",
         neonGlow: "#02c435",
-        neon: "#69BE29",
+        neon: "#31BD1B",
         pinkGta: "#c812aa",
       },
       backgroundImage: {

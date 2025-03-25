@@ -23,7 +23,7 @@ const Presta = () => {
         className="w-full h-auto flex justify-center items-center"
         id="compenent-text-container"
       >
-        <HeroPrestaText title={HeroPrestaPro.title} text={HeroPrestaPro.text} />
+        <HeroPrestaText title={HeroPrestaPro.title} text={"Soirées de gala, séminaires, inauguration ou même un simple cocktail apéritif, nos bars mobiles ainsi l’équipe, arrivent à s’adapter pour servir un grand nombre de convives."} />
       </div>
       <List
         src={ListPrestaPro.src}

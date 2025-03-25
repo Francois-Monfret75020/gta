@@ -27,13 +27,13 @@ const Footer = () => {
           </div>
           <Link
             href="tel:+3356869362"
-            className="font-normal text-xs  w-[35%] footer:w-[60%] min-w-[11rem] hover:text-greeno"
+            className="font-normal text-base  w-[35%] footer:w-[60%] min-w-[11rem] hover:text-greeno"
           >
             06 56 86 93 62
           </Link>
           <Link
             href="mailto:cocktail-envents@gmail.com"
-            className="font-normal text-xs   w-[57%] min-w-[11rem] footer:w-[100%] hover:text-greeno"
+            className="font-normal text-base  w-[57%] min-w-[11rem] footer:w-[100%] hover:text-greeno"
           >
             cocktail-envents@gmail.com
           </Link>
@@ -43,19 +43,19 @@ const Footer = () => {
           <div className="font-light text-xl   mb-1  neon-text">PAGES</div>
           <Link
             href="/prestation"
-            className="font-normal text-xs w-[30%] text-gray-500 hover:text-greeno"
+            className="font-normal text-base w-[30%] text-gray-500 hover:text-greeno"
           >
             Presations
           </Link>
           <Link
             href="/info"
-            className="font-normal text-xs w-[30%] text-gray-500 hover:text-greeno"
+            className="font-normal text-base w-[30%] text-gray-500 hover:text-greeno"
           >
             Equipe
           </Link>
           <Link
             href="/booking"
-            className="font-normal text-xs w-[30%] text-gray-500 hover:text-greeno"
+            className="font-normal text-base w-[30%] text-gray-500 hover:text-greeno"
           >
             Booking
           </Link>
@@ -65,31 +65,31 @@ const Footer = () => {
           <div className="font-light text-xl mb-1  neon-text">PRESTATIONS</div>
           <Link
             href="/prestation/mariage"
-            className="font-normal text-xs w-[30%] hover:text-greeno "
+            className="font-normal text-base w-[30%] hover:text-greeno "
           >
             Mariage
           </Link>
           <Link
             href="/prestation/privatisation"
-            className="font-normal text-xs w-[30%] hover:text-greeno "
+            className="font-normal text-base w-[30%] hover:text-greeno "
           >
             Privatisation
           </Link>
           <Link
             href="/prestation/entreprise"
-            className="font-normal text-xs w-[52%] min-w-[9rem] footer:w-[100%] hover:text-greeno"
+            className="font-normal text-base w-[52%] min-w-[9rem] footer:w-[100%] hover:text-greeno"
           >
             Entreprise Team Building
           </Link>
           <Link
             href="/prestation/atelier"
-            className="font-normal text-xs w-[30%] min-w-[6rem] footer:w-[100%] hover:text-greeno"
+            className="font-normal text-base w-[30%] min-w-[6rem] footer:w-[100%] hover:text-greeno"
           >
             Atelier Cocktail
           </Link>
           <Link
             href="/prestation/piano-bar"
-            className="font-normal text-xs w-[30%] footer:w-[100%] hover:text-greeno"
+            className="font-normal text-base w-[30%] footer:w-[100%] hover:text-greeno"
           >
             Piano-bar
           </Link>

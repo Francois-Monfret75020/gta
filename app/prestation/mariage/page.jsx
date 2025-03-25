@@ -26,7 +26,7 @@ const presta = () => {
       >
         <HeroPrestaText
           title={HeroPrestaMariage.title}
-          text={HeroPrestaMariage.text}
+          text={"L’incontournable bar à cocktails avec barmans jongleurs cracheur de feu et des formules attractives tout inclus, de l’open bar ou bien un devis personnalisé, dites nous simplement le type d’événement, le lieux et le nombre d’invités pour commencer."}
           type={"mariage"}
         />
       </div>

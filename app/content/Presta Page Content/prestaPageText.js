@@ -7,13 +7,16 @@ import mojito from "../../../public/mojito.jpg";
 import piano from "../../../public/gtaPiano.png";
 import piano2 from "../../../public/gtaPrivateMobile.png";
 import team2 from "../../../public/gtaTeam.png";
+import barMariage from "../../../public/mariageBAr.jpeg";
+import cocktail from "../../../public/cocktail.jpg";
+import mede from "../../../public/medericFlame.jpeg";
 
 //---------------------------------------------MARIAGE---------------------------------------------
 
 export const HeroPrestaMariage = {
   title: "nos prestations de bar cocktails pour votre mariage !",
   text: "Vous allez vivre l’un des jours les plus important de votre vie. Vous souhaitez que ce moment reste gravé dans les mémoires. Il le sera. Mais vous savez aussi que ce sont les petits plus, la nouveauté, la surprise qui font en sorte de rendre cette journée encore plus mémorable. Bar Events oeuvre en ce sens.",
-  alt : "Une mariée en robe blanche qu'on fait sauter en l'air par ses invités lors de son mariage",
+  alt: "Une mariée en robe blanche qu'on fait sauter en l'air par ses invités lors de son mariage",
   src: mariage,
 };
 
@@ -27,8 +30,7 @@ export const ListPrestaMariage = {
   text: [
     "Des bars à cocktails éphémères et des animations mariage",
     "Un large choix de cocktails et spiritueux à la carte",
-    "Des cours de cocktail pour déguster et s’amuser en même temps",
-    "Un protocole sanitaire Covid qui a fait ses preuves",
+    "Flair, jonglage et cracheur de feu au rendez-vous !",
   ],
 
   src: girls,
@@ -37,18 +39,18 @@ export const ListPrestaMariage = {
 export const ListPrestaMariageContent = [
   {
     title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
-    src: mojito,
+    text: "Nos bars mobiles créent l’émerveillement grâce à une scénographie soignée et des cocktails raffinés. Offrez à vos invités une expérience sensorielle unique, alliant esthétique, saveurs authentiques et ambiance festive.",
+    src: barMariage,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
-    src: mojito,
+    title: "Un large choix de cocktails et spiritueux à la carte",
+    text: "Découvrez une carte variée de cocktails signatures et de spiritueux premium. Des créations sur mesure aux grands classiques, nous adaptons notre offre aux envies de vos convives pour un moment de dégustation inoubliable.",
+    src: cocktail,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
-    src: mojito,
+    title: "Flair, jonglage et cracheur de feu au rendez-vous !",
+    text: "Nos barmen performeurs transforment le service en véritable spectacle : flair bartending, jonglage de bouteilles et cracheur de feu rythment votre événement pour une animation à couper le souffle.",
+    src: mede,
   },
 ];
 
@@ -56,9 +58,9 @@ export const ListPrestaMariageContent = [
 
 export const HeroPrestaAtelier = {
   title: "NOS PRESTATIONS DE BAR COCKTAIL À DOMICILE !",
-  text: "Vous allez vivre l’un des jours les plus important de votre vie. Vous souhaitez que ce moment reste gravé dans les mémoires. Il le sera. Mais vous savez aussi que ce sont les petits plus, la nouveauté, la surprise qui font en sorte de rendre cette journée encore plus mémorable. Bar Events oeuvre en ce sens.",
+  text: "Du cocktail dit classique aux cocktails plus élaborés, notre équipe de barmans, ayant pour cetains 15 ans d’expérience, se fera un plaisir d’animer cet atelier tout en dévoilant des détails qui font toute la différence.",
   src: atelier,
-  alt : "atelier coktail avec des participant souriant, mélangeant des ingrédients et suivant les instructions du barman.",
+  alt: "atelier coktail avec des participant souriant, mélangeant des ingrédients et suivant les instructions du barman.",
 };
 
 export const ListPrestaAtelier = {
@@ -67,29 +69,27 @@ export const ListPrestaAtelier = {
     "Des bars à cocktails éphémères et des animations mariage",
     "Un large choix de cocktails et spiritueux à la carte",
     "Des cours de cocktail pour déguster et s’amuser en même temps",
-    "Un protocole sanitaire Covid qui a fait ses preuves",
   ],
   src: girls,
 };
 
 export const ListPrestaAtelierContent = [
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "Des secrets de pros pour des cocktails uniques",
+    text: "Nos barmans expérimentés vous dévoilent les astuces et gestes qui transforment un simple cocktail en véritable chef-d'œuvre gustatif.",
     src: mojito,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "Un atelier ludique et participatif",
+    text: "Apprenez à shaker, doser et sublimer vos créations aux côtés de mixologues passionnés. Ambiance conviviale garantie !",
     src: mojito,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "Classiques ou créations originales à votre portée",
+    text: "Du Mojito au cocktail signature, explorez un large éventail de recettes et repartez avec des techniques dignes des meilleurs bars.",
     src: mojito,
   },
 ];
-
 
 //---------------------------------------------PRO---------------------------------------------
 
@@ -97,7 +97,7 @@ export const HeroPrestaPro = {
   title: "NOS PRESTATIONS COCKTAIL POUR ENTREPRISE ET TEAM-BUILDING!",
   text: "Vous allez vivre l’un des jours les plus important de votre vie. Vous souhaitez que ce moment reste gravé dans les mémoires. Il le sera. Mais vous savez aussi que ce sont les petits plus, la nouveauté, la surprise qui font en sorte de rendre cette journée encore plus mémorable. Bar Events oeuvre en ce sens.",
   src: team,
-  alt : "Des collègues de bureau en tenue professionnelle trinquant avec des verres de champagne lors d'une célébration",
+  alt: "Des collègues de bureau en tenue professionnelle trinquant avec des verres de champagne lors d'une célébration",
 };
 
 export const ListPrestaPro = {
@@ -106,37 +106,35 @@ export const ListPrestaPro = {
     "Des bars à cocktails éphémères et des animations mariage",
     "Un large choix de cocktails et spiritueux à la carte",
     "Des cours de cocktail pour déguster et s’amuser en même temps",
-    "Un protocole sanitaire Covid qui a fait ses preuves",
   ],
   src: team2,
 };
 
 export const ListPrestaProContent = [
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
-    src: mojito,
+    title: "Des bars mobiles pour tous vos événements pros",
+    text: "Que ce soit pour un gala chic, un séminaire d'entreprise ou un apéro décontracté, notre équipe s’adapte à l’ambiance et à la taille de votre événement pour régaler vos invités avec panache !",
+    src: team2,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
-    src: mojito,
+    title: "Service rapide, ambiance garantie",
+    text: "Nos mixologues et bartenders savent jongler (littéralement) avec les commandes pour servir un maximum de convives sans jamais perdre le sourire ou casser une bouteille.",
+    src: team2,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
-    src: mojito,
+    title: "Du show derrière le bar, du fun devant",
+    text: "Cocktails à la chaîne, flair bartending et bonne humeur sont au programme pour transformer vos événements pros en souvenirs mémorables. Notre devise : zéro ennui, 100% convivialité !",
+    src: team2,
   },
 ];
-
 
 //---------------------------------------------PRIVATE---------------------------------------------
 
 export const HeroPrestaPrivate = {
   title: "NOS PRESTATIONS DE BAR COCKTAIL À DOMICILE !",
-  text: "Vous allez vivre l’un des jours les plus important de votre vie. Vous souhaitez que ce moment reste gravé dans les mémoires. Il le sera. Mais vous savez aussi que ce sont les petits plus, la nouveauté, la surprise qui font en sorte de rendre cette journée encore plus mémorable. Bar Events oeuvre en ce sens.",
+  text: "Nous intervenons à votre domicile, en intérieur ou extérieur à l’occasion d’un anniversaire, d’une crémaillère ou tout autre type d’événement, cette préstation marquera la différence",
   src: private2,
-  alt : "Un barman préparant des cocktails sophistiqués chez un particulier, avec divers ingrédients et bouteilles en arrière-plan",
+  alt: "Un barman préparant des cocktails sophistiqués chez un particulier, avec divers ingrédients et bouteilles en arrière-plan",
 };
 
 export const ListPrestaPrivate = {
@@ -145,37 +143,34 @@ export const ListPrestaPrivate = {
     "Des bars à cocktails éphémères et des animations mariage",
     "Un large choix de cocktails et spiritueux à la carte",
     "Des cours de cocktail pour déguster et s’amuser en même temps",
-    "Un protocole sanitaire Covid qui a fait ses preuves",
   ],
   src: team2,
 };
 
 export const ListPrestaPrivateContent = [
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "Un bar à domicile qui fait sensation",
+    text: "Anniversaire, crémaillère ou fête improvisée, on se déplace chez vous avec notre bar mobile et toute notre énergie pour faire vibrer votre salon ou votre jardin !",
     src: mojito,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "L'animation qui change tout chez vous",
+    text: "Oubliez les soirées classiques ! Nos mixologues transforment votre maison en véritable cocktail party. En intérieur ou extérieur, on met l’ambiance et on fait la différence.",
     src: mojito,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "Des cocktails maison… dans votre maison",
+    text: "Fruits frais, flair bartending et bonne humeur : on vous prépare un mix détonant directement chez vous. L’objectif ? Créer des souvenirs inoubliables avec vos proches !",
     src: mojito,
   },
 ];
-
-
 //---------------------------------------------PIANO---------------------------------------------
 
 export const HeroPrestaPiano = {
   title: "NOS PRESTATIONS PIANO BAR !",
-  text: "Vous allez vivre l’un des jours les plus important de votre vie. Vous souhaitez que ce moment reste gravé dans les mémoires. Il le sera. Mais vous savez aussi que ce sont les petits plus, la nouveauté, la surprise qui font en sorte de rendre cette journée encore plus mémorable. Bar Events oeuvre en ce sens.",
+  text: "Il s’agit du concept original d’un ancien piano droit modifier de manière à allier d’un coté un piano et de l’autre un authentique bar raffiné. Un système audio haute qualité, un pianiste, un barman inclus et d’autre musiciens selon la demande, feront également de cette préstation",
   src: piano,
-  alt : "Un barman préparant des cocktails sophistiqués chez un particulier, avec divers ingrédients et bouteilles en arrière-plan",
+  alt: "Un barman préparant des cocktails sophistiqués chez un particulier, avec divers ingrédients et bouteilles en arrière-plan",
 };
 
 export const ListPrestaPiano = {
@@ -184,54 +179,50 @@ export const ListPrestaPiano = {
     "Des bars à cocktails éphémères et des animations mariage",
     "Un large choix de cocktails et spiritueux à la carte",
     "Des cours de cocktail pour déguster et s’amuser en même temps",
-    "Un protocole sanitaire Covid qui a fait ses preuves",
   ],
   src: piano2,
 };
 
 export const ListPrestaPianoContent = [
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "Un piano transformé en bar d’exception",
+    text: "Découvrez notre piano-bar unique : un ancien piano droit réinventé pour devenir un comptoir raffiné où cocktails et mélodies se rencontrent.",
     src: mojito,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "L’alliance parfaite entre musique live et mixologie",
+    text: "Un barman, un pianiste, et selon vos envies, d’autres musiciens pour créer une ambiance élégante et mémorable lors de vos événements.",
     src: mojito,
   },
   {
-    title: "Des bars à cocktails pour la surprise, le goût et l’animation",
-    text: "Nous provoquons la surprise par notre tenu, nos bars décoré à la thématique de votre mariage et par les saveurs qui seront proposés à vos invités.Nous révélons les goûts grâce à notre passion, aux produits que nous utilisons dans nos recettes.",
+    title: "Une expérience immersive et élégante",
+    text: "Offrez à vos invités une parenthèse hors du temps où le son du piano et le goût des cocktails s’unissent pour des souvenirs inoubliables.",
     src: mojito,
   },
 ];
 
-
-
 //---------------------------------------------GAMES---------------------------------------------
 
-export const PrestaTextGames = 
-  {
-    title: "Des Extras pour une Ambiance Unique",
-    text: "Pour vos événements, nous proposons des prestations de bar ainsi que des animations uniques : bornes d'arcade rétro, baby-foot, et piano bar. Ces options ajoutent une touche de convivialité et d'élégance, créant des moments inoubliables",
-    
-  }
+export const PrestaTextGames = {
+  title: "Des Extras pour une Ambiance Unique",
+  text: "Pour vos événements, nous proposons des prestations de bar ainsi que des animations uniques : bornes d'arcade rétro, baby-foot, et piano bar. Ces options ajoutent une touche de convivialité et d'élégance, créant des moments inoubliables",
+};
 
-  export const GamesContent = [
+export const GamesContent = [
   {
-    url : ["test" , "test2", "test3"], 
+    url: ["test", "test2", "test3"],
     title: "Bayby foot",
     text: "Défiez vos amis ",
-    
-  },  {
-    url : ["test" , "test2", "test3"], 
+    src: piano,
+  },
+  {
+    url: ["test", "test2", "test3"],
     title: "Flipper",
     text: "Ambiance rétro ",
-    
-  },  {
-    url : ["test" , "test2", "test3"], 
+  },
+  {
+    url: ["test", "test2", "test3"],
     title: "Piano bar",
     text: "Une touche d'élégance ",
-    
-  }]
+  },
+];

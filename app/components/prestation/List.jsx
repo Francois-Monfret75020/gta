@@ -26,6 +26,7 @@ const ListItem = ({ text, index }) => {
 };
 
 const List = ({ title, textArray, src }) => {
+  
   return (
     <div className="relative flex-col bg-black flex items-center justify-center p-3">
       <Image src={src} alt="Background Image" fill className="object-cover" />

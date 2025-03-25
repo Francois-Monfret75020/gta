@@ -22,28 +22,37 @@ const Home = () => {
 
   return (
     <>
-      <main className="relative bg-black overflow-x-hidden">
-        <AnimatePresence mode="wait">
+      <main className="relative bg-black overflow-x-hidden flex flex-col">
+        {/* <AnimatePresence mode="wait">
           {isLoaded && <Preloader />}
-        </AnimatePresence>
+        </AnimatePresence> */}
         <section className="h-screen">
           <Slider />
         </section>
 
         <div
-          id="prestation-container"
+          id="prestation-container "
           className="flex h-auto flex-col justify-evenly mb-20 mt-20"
         >
-             <div
-        className="w-full h-auto flex justify-center items-center"
-        id="compenent-text-container"
-      >
-        <HeroPrestaText
-          title={"Nos Prestations : "}
-          text={""}
-          type={"mariage"}
-        />
-      </div>
+          <div
+            className="w-full h-auto flex flex-col justify-center items-center"
+            id="compenent-text-container"
+          >
+            <HeroPrestaText
+              title={"Cocktails & Performances : Le Bar Événementiel qui Fait le Show"}
+              text={
+                "Spécialistes du bar mobile événementiel, nous sommes une équipe de mixologues et flair bartender (barman jongleur, cracheur de feu) créant ainsi une véritable animation. Nous proposons un service de bar à cocktail sur mesure, à thèmes, utilisant des produits frais, notamment un large choix de purées de fruits exotiques 100% fruit, ainsi que des jus et sirops maison."
+              }
+              type={"mariage"}
+            />
+            <HeroPrestaText
+              title={"Nos Prestations : "}
+              text={
+                ""
+              }
+              type={"mariage"}
+            />
+          </div>
           {prestaData.map((prestaData, index) => {
             return <Card key={index} {...prestaData} href={prestaData.link} />;
           })}

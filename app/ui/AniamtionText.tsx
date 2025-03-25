@@ -8,6 +8,7 @@ type AniamtionTextProps = {
   once?: boolean;
   left?: boolean;
   right?: boolean;
+  delay?: number;
 };
 
 const defaultAnimation = {
@@ -25,6 +26,7 @@ const AniamtionText = ({
   el: Wrapper = "p",
   className,
   once,
+  delay,
 }: AniamtionTextProps) => {
   const textArray = Array.isArray(text) ? text : [text];
   const ref = useRef(null);

@@ -63,7 +63,7 @@ const ListContent = ({ content, show }) => {
               src={item.src}
               alt="hero"
               fill
-              className="object-cover h-full w-full"
+              className="object-contain h-full w-full"
             />
           </div>
         </div>

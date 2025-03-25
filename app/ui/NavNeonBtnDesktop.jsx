@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { TbTriangleFilled } from "react-icons/tb"; // Assurez-vous d'importer l'icône
+
 
 const NavNeonBtnDesktop = ({ text, event, href }) => {
   const pathname = usePathname();
@@ -29,7 +29,7 @@ const NavNeonBtnDesktop = ({ text, event, href }) => {
           animate={{ scaleX: pathname === href || event  ? 1 : 0 }}
           transition={{ duration: 0.5 }}
         />
-        <div className="md:text-base lg:text-lg px-6 py-4">
+        <div className="md:text-base lg:text-xl px-6 py-4">
      
             {text}
 

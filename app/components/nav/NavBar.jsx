@@ -164,7 +164,7 @@ const NavBar = () => {
           <Link href="/" className="text-lg font-bold">
             Class Cocktails
           </Link>
-          <div className="flex justify-center items-center w-full gap-x-[5%]">
+          <div className="flex justify-center text-xl items-center w-full gap-x-[5%]">
             <div>
               <FlyOutLink FlyOutContent={FlyOutMenuDesktop} name={"Prestations"}      toggleOpen={toggleOpen} />
             </div>

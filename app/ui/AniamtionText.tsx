@@ -32,8 +32,6 @@ const AniamtionText = ({
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.1, once: once });
 
-
-
   return (
     <Wrapper className={className}>
       <span className="sr-only ">{text}</span>
@@ -58,7 +56,7 @@ const AniamtionText = ({
               <motion.span
                 key={wordIndex}
                 variants={defaultAnimation}
-                style={{ display : "inline-block" }}
+                className="inline-block"
               >
                 {word}&nbsp;
               </motion.span>

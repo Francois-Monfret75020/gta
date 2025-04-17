@@ -19,12 +19,12 @@ const Card = ({ src, alt, description, buttonText, href }) => {
   return (
     <div
       id="card-container"
-      className="flex flex-col w-full justify-center items-center mb-8"
+      className="flex flex-col w-[300px] lg:w-[500px] justify-center items-center mx-auto"
     >
       <div
         ref={container}
         id="card"
-        className="h-[400px] xl:[400px] w-4/5 flex justify-center"
+        className="h-[400px] w-full flex justify-center"
       >
         <div
           id="image-container"
@@ -38,8 +38,8 @@ const Card = ({ src, alt, description, buttonText, href }) => {
             <Image
               src={src}
               alt={alt}
-        fill
-                 className="absolute inset-0 w-full h-full "
+              fill
+              className="absolute inset-0 w-full h-full object-cover "
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-30">
               <p className="text-white font-extralight text-2xl mb-8 text-center">
@@ -49,7 +49,12 @@ const Card = ({ src, alt, description, buttonText, href }) => {
                 onMouseEnter={() => setLinkEffect(true)}
                 onMouseLeave={() => setLinkEffect(false)}
               >
-                <BgImgBtn href={href} text={buttonText} event={linkEffect} className=""/>
+                <BgImgBtn
+                  href={href}
+                  text={buttonText}
+                  event={linkEffect}
+                  className=""
+                />
               </div>
             </div>
           </motion.div>

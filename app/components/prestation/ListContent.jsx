@@ -28,7 +28,7 @@ const ListContent = ({ content, show }) => {
             {show && (
               <div
                 id="number"
-                className=" md:mb-36 h-24 justify-center flex items-center font-extralight md:text-5xl text-3xl text-red-200 "
+                className=" h-24 justify-center flex items-center font-extralight md:text-5xl text-3xl text-red-200 "
               >
                 {index + 1}
               </div>
@@ -40,7 +40,7 @@ const ListContent = ({ content, show }) => {
               <AniamtionText
                 text={item.title}
                 el="h2"
-                className="title md:text-[33px] text-[22px]  uppercase font-nomral"
+                className="title md:text-[20px] text-[22px]  uppercase font-nomral"
                 once={true}
       
               />
@@ -53,7 +53,7 @@ const ListContent = ({ content, show }) => {
               )}
             </div>
             <div id="text" className="w-full md:w-[50vw] h-auto">
-              <div className="neon-text-white mx-auto w-[85%] leading-12 text-[20px] md:text-[30px]   font-extralight  text-center md:text-start">
+              <div className="neon-text-white mx-auto w-[85%] leading-12 text-[20px] md:text-[18px]   font-extralight  text-center md:text-start">
                 <p className="text">{item.text}</p>
               </div>
             </div>

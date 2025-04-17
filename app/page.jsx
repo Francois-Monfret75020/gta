@@ -39,7 +39,9 @@ const Home = () => {
             id="compenent-text-container"
           >
             <HeroPrestaText
-              title={"Cocktails & Performances : Le Bar Événementiel qui Fait le Show"}
+              title={
+                "Cocktails & Performances : Le Bar Événementiel qui Fait le Show"
+              }
               text={
                 "Spécialistes du bar mobile événementiel, nous sommes une équipe de mixologues et flair bartender (barman jongleur, cracheur de feu) créant ainsi une véritable animation. Nous proposons un service de bar à cocktail sur mesure, à thèmes, utilisant des produits frais, notamment un large choix de purées de fruits exotiques 100% fruit, ainsi que des jus et sirops maison."
               }
@@ -47,15 +49,17 @@ const Home = () => {
             />
             <HeroPrestaText
               title={"Nos Prestations : "}
-              text={
-                ""
-              }
+              text={""}
               type={"mariage"}
             />
           </div>
-          {prestaData.map((prestaData, index) => {
-            return <Card key={index} {...prestaData} href={prestaData.link} />;
-          })}
+          <div className="w-full max-w-[1200px] mx-auto flex flex-wrap justify-center gap-8 py-10">
+            {prestaData.map((prestaData, index) => (
+              <div key={index} className="w-full lg:w-[500px]">
+                <Card {...prestaData} href={prestaData.link} />
+              </div>
+            ))}
+          </div>
         </div>
       </main>
     </>

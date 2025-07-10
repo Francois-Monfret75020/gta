@@ -33,7 +33,7 @@ const BookingFull = () => {
     >
       <div
         id="whatsapp-containeur"
-        className="flex flex-col h-full lg:h-screen items-center justify-center lg:w-1/2 text-center lg:mt-8"
+        className="flex flex-col h-full lg:h-screen items-center justify-center w-full text-center lg:mt-8 "
       >
         <h2 className="p-8 py-8 mt-4 font-bold tracking-tight text-5xl pt-20 lg:pt-10 font-oswald neon-title-green">
           Contactez-nous
@@ -69,7 +69,7 @@ const BookingFull = () => {
         </div>
       </div>
 
-      <div
+      {/* <div
         id="calendy-containeur"
         className="flex flex-col lg:w-1/2 h-full mt-8 lg:mt-10"
       >
@@ -79,7 +79,7 @@ const BookingFull = () => {
         >
           <Calendy />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

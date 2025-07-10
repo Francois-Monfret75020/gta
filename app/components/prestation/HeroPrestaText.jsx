@@ -12,7 +12,7 @@ const HeroPrestaText = ({ title, text, }) => {
   return (
     <div
       id="text-container"
-      className={`flex  bg-black text-white  w-full p-8 md:p-12 lg:p-8   md:mx-8 lg:mx-16 my-4 md:my-8 lg:my-2 h-auto md:h-[300px] text-center justify-center items-center flex-col gap-y-4`}
+      className={`flex  bg-black text-white  w-full p-8  md:p-10 lg:p-8   md:mx-8 md:py-8 lg:mx-16 my-4 md:my-8 lg:my-2 h-auto  text-center justify-center items-center flex-col gap-y-4`}
     >
       <AniamtionText
         text={title}

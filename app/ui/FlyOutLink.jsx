@@ -1,14 +1,27 @@
 // FlyoutLink.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FlyOutNeonBtnDeskstop from "./FlyOutNeonBtnDeskstop";
 
-const FlyoutLink = ({ name, FlyOutContent, toggleOpen, pathname, href, event }) => {
+const FlyoutLink = ({
+  name,
+  FlyOutContent,
+  toggleOpen,
+  pathname,
+  href,
+  event,
+  isNavbarOpen,
+}) => {
   const [isOpen, setOpen] = useState(false);
 
   const showFlyOut = FlyOutContent && isOpen;
 
-  
+  // Réinitialiser l'état du flyout quand la navbar mobile se ferme
+  useEffect(() => {
+    if (isNavbarOpen === false) {
+      setOpen(false);
+    }
+  }, [isNavbarOpen]);
 
   return (
     <div
@@ -17,8 +30,14 @@ const FlyoutLink = ({ name, FlyOutContent, toggleOpen, pathname, href, event }) 
       className=" h-fit w-fit relative  z-50"
       id="flyout-link"
     >
-      <FlyOutNeonBtnDeskstop text={name} href={href} pathname={pathname} event={isOpen} className="z-50" />
-      
+      <FlyOutNeonBtnDeskstop
+        text={name}
+        href={href}
+        pathname={pathname}
+        event={isOpen}
+        className="z-50"
+      />
+
       <AnimatePresence>
         {showFlyOut && (
           <motion.div
@@ -30,7 +49,7 @@ const FlyoutLink = ({ name, FlyOutContent, toggleOpen, pathname, href, event }) 
             className="absolute bg-blacko z-50 rounded-md -top-[-5rem]  md:-top-[-5rem] border-2  neon-button-desktop  border-neon left-[6rem] md:left-1/2   "
           >
             <div className="absolute -top-10 left-0 h-6 right-0 " />
-            <FlyOutContent toggleOpen={toggleOpen} className='z-50' />
+            <FlyOutContent toggleOpen={toggleOpen} className="z-50" />
           </motion.div>
         )}
       </AnimatePresence>

@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
-        oswald: ["Oswald", "serif"],
+        montserrat: ["var(--font-montserrat)", "Montserrat", "sans-serif"],
+        oswald: ["var(--font-oswald)", "Oswald", "sans-serif"],
         gta: ["var(--gta-font)"],
       },
       colors: {

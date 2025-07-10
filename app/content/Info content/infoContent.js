@@ -1,7 +1,7 @@
 import medericFlame from "../../../public/medericFlame.jpeg";
 import cocktail from "../../../public/atelier.jpg";
-import mede from "../../../public/medericFlame.jpeg";
-import mede2 from "../../../public/medericFlame.jpeg";
+import tout from "../../../public/tout.jpg" 
+import collectif from "../../../public/collectif.jpg"
 
 export const infoData = {
   src: medericFlame,
@@ -30,14 +30,14 @@ export const experienceArray = [
 
 export const infoData2 = [
   {
-    src: mede,
+    src: tout,
     alt: "Un atelier de création de cocktails avec des participant souriant, mélangeant des ingrédients et suivant les instructions du barman.",
     title: "Tout commence il y a 15 ans...",
     text: "Bar Events, c'est avant toutes choses un collectif de bartenders événementiel, c'est une famille de mixologues passionnés, décidée à révolutionner le cocktail événementiel.",
   },
 
   {
-    src: mede2,
+    src: collectif,
     alt: "Un atelier de création de cocktails avec des participant souriant, mélangeant des ingrédients et suivant les instructions du barman.",
     title: "Notre mission :",
     text: "Bar Events, c'est avant toutes choses un collectif de bartenders événementiel, c'est une famille de mixologues passionnés, décidée à révolutionner le cocktail événementiel.",

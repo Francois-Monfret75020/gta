@@ -56,8 +56,8 @@ const Presta = () => {
             show={true}
             title={game.title}
             text={game.text}
-            url={game.url} // Pass the entire array of URLs
-            initialX={index % 2 === 0 ? '-100%' : '100%'} 
+            src={game.src} // Pass the src property
+            initialX={index % 2 === 0 ? "-100%" : "100%"}
           />
         ))}
       </div>

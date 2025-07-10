@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
 const ListItem = ({ text, index }) => {
@@ -9,8 +8,11 @@ const ListItem = ({ text, index }) => {
   return (
     <motion.a
       ref={ref}
-      initial={{ opacity: 0, x: index % 2 === 0 ? '-100%' : '100%' }}
-      animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : index % 2 === 0 ? '-100%' : '100%' }}
+      initial={{ opacity: 0, x: index % 2 === 0 ? "-100%" : "100%" }}
+      animate={{
+        opacity: isInView ? 1 : 0,
+        x: isInView ? 0 : index % 2 === 0 ? "-100%" : "100%",
+      }}
       transition={{ duration: 0.5 }}
       href={`#title-text-and-image-container${index + 1}`}
       className="flex items-center w-[19rem] md:w-[35rem] bg-white text-center h-[5.5rem] p-2 hover:bg-black hover:text-neon rounded-md"
@@ -26,13 +28,11 @@ const ListItem = ({ text, index }) => {
 };
 
 const List = ({ title, textArray, src }) => {
-  
   return (
     <div className="relative flex-col bg-black flex items-center justify-center p-3">
-      <Image src={src} alt="Background Image" fill className="object-cover" />
       <div className="relative flex flex-col p-4 h-full w-full items-center justify-center">
         <div className="flex items-center justify-center w-full">
-          <div className="bg-neon p-6 h-auto sm:h-[100px] sm:w-[800px] md:w-[800px] md:text-[25px] text-[22px] uppercase font-normal text-center flex items-center justify-center relative mb-10 rounded-sm">
+          <div className="bg-neon p-6 h-auto sm:h-[100px] sm:w-[800px] md:w-[600px] md:text-[25px] text-[22px] uppercase font-normal text-center flex items-center justify-center relative mb-10 rounded-sm">
             <h2 className="text-black font-montserrat sub-title">{title}</h2>
           </div>
         </div>

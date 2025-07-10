@@ -1,15 +1,21 @@
-import mariage from "../../../public/gtaCouple.png";
-import girls from "../../../public/girls.jpg";
 import atelier from "../../../public/atelier.jpg";
-import team from "../../../public/gtaTeam.png";
-import private2 from "../../../public/bar-private2.jpg";
+import private2 from "../../../public/bar-private.jpg";
+import mariage from "../../../public/gtaCoupleMobile.png";
+
+import heroPiano from "../../../public/heroPiano.jpg";
+import barexe from "../../../public/immersif.jpeg";
+import barmixo from "../../../public/barmixo.jpg";
+import exp from "../../../public/exp.jpg";
+
 import mojito from "../../../public/mojito.jpg";
-import piano from "../../../public/gtaPiano.png";
+
 import piano2 from "../../../public/gtaPrivateMobile.png";
-import team2 from "../../../public/gtaTeam.png";
-import barMariage from "../../../public/mariageBAr.jpeg";
-import cocktail from "../../../public/cocktail.jpg";
+import service from "../../../public/serviceMede.jpeg";
+import jongle from "../../../public/jongle.jpeg";
+import team2 from "../../../public/entreprise.jpg";
+import bar from "../../../public/bar.png";
 import mede from "../../../public/medericFlame.jpeg";
+import choix from "../../../public/choix.JPG";
 
 //---------------------------------------------MARIAGE---------------------------------------------
 
@@ -32,20 +38,19 @@ export const ListPrestaMariage = {
     "Un large choix de cocktails et spiritueux à la carte",
     "Flair, jonglage et cracheur de feu au rendez-vous !",
   ],
-
-  src: girls,
+  src: mariage,
 };
 
 export const ListPrestaMariageContent = [
   {
     title: "Des bars à cocktails pour la surprise, le goût et l’animation",
     text: "Nos bars mobiles créent l’émerveillement grâce à une scénographie soignée et des cocktails raffinés. Offrez à vos invités une expérience sensorielle unique, alliant esthétique, saveurs authentiques et ambiance festive.",
-    src: barMariage,
+    src: bar,
   },
   {
     title: "Un large choix de cocktails et spiritueux à la carte",
     text: "Découvrez une carte variée de cocktails signatures et de spiritueux premium. Des créations sur mesure aux grands classiques, nous adaptons notre offre aux envies de vos convives pour un moment de dégustation inoubliable.",
-    src: cocktail,
+    src: choix,
   },
   {
     title: "Flair, jonglage et cracheur de feu au rendez-vous !",
@@ -70,7 +75,6 @@ export const ListPrestaAtelier = {
     "Un large choix de cocktails et spiritueux à la carte",
     "Des cours de cocktail pour déguster et s’amuser en même temps",
   ],
-  src: girls,
 };
 
 export const ListPrestaAtelierContent = [
@@ -96,7 +100,7 @@ export const ListPrestaAtelierContent = [
 export const HeroPrestaPro = {
   title: "NOS PRESTATIONS COCKTAIL POUR ENTREPRISE ET TEAM-BUILDING!",
   text: "Vous allez vivre l’un des jours les plus important de votre vie. Vous souhaitez que ce moment reste gravé dans les mémoires. Il le sera. Mais vous savez aussi que ce sont les petits plus, la nouveauté, la surprise qui font en sorte de rendre cette journée encore plus mémorable. Bar Events oeuvre en ce sens.",
-  src: team,
+  src: team2,
   alt: "Des collègues de bureau en tenue professionnelle trinquant avec des verres de champagne lors d'une célébration",
 };
 
@@ -114,17 +118,17 @@ export const ListPrestaProContent = [
   {
     title: "Des bars mobiles pour tous vos événements pros",
     text: "Que ce soit pour un gala chic, un séminaire d'entreprise ou un apéro décontracté, notre équipe s’adapte à l’ambiance et à la taille de votre événement pour régaler vos invités avec panache !",
-    src: team2,
+    src: bar,
   },
   {
     title: "Service rapide, ambiance garantie",
     text: "Nos mixologues et bartenders savent jongler (littéralement) avec les commandes pour servir un maximum de convives sans jamais perdre le sourire ou casser une bouteille.",
-    src: team2,
+    src: service,
   },
   {
     title: "Du show derrière le bar, du fun devant",
     text: "Cocktails à la chaîne, flair bartending et bonne humeur sont au programme pour transformer vos événements pros en souvenirs mémorables. Notre devise : zéro ennui, 100% convivialité !",
-    src: team2,
+    src: jongle,
   },
 ];
 
@@ -151,12 +155,12 @@ export const ListPrestaPrivateContent = [
   {
     title: "Un bar à domicile qui fait sensation",
     text: "Anniversaire, crémaillère ou fête improvisée, on se déplace chez vous avec notre bar mobile et toute notre énergie pour faire vibrer votre salon ou votre jardin !",
-    src: mojito,
+    src: bar,
   },
   {
     title: "L'animation qui change tout chez vous",
     text: "Oubliez les soirées classiques ! Nos mixologues transforment votre maison en véritable cocktail party. En intérieur ou extérieur, on met l’ambiance et on fait la différence.",
-    src: mojito,
+    src: service,
   },
   {
     title: "Des cocktails maison… dans votre maison",
@@ -169,7 +173,7 @@ export const ListPrestaPrivateContent = [
 export const HeroPrestaPiano = {
   title: "NOS PRESTATIONS PIANO BAR !",
   text: "Il s’agit du concept original d’un ancien piano droit modifier de manière à allier d’un coté un piano et de l’autre un authentique bar raffiné. Un système audio haute qualité, un pianiste, un barman inclus et d’autre musiciens selon la demande, feront également de cette préstation",
-  src: piano,
+  src: heroPiano,
   alt: "Un barman préparant des cocktails sophistiqués chez un particulier, avec divers ingrédients et bouteilles en arrière-plan",
 };
 
@@ -187,17 +191,17 @@ export const ListPrestaPianoContent = [
   {
     title: "Un piano transformé en bar d’exception",
     text: "Découvrez notre piano-bar unique : un ancien piano droit réinventé pour devenir un comptoir raffiné où cocktails et mélodies se rencontrent.",
-    src: mojito,
+    src: barexe,
   },
   {
     title: "L’alliance parfaite entre musique live et mixologie",
     text: "Un barman, un pianiste, et selon vos envies, d’autres musiciens pour créer une ambiance élégante et mémorable lors de vos événements.",
-    src: mojito,
+    src: barmixo,
   },
   {
     title: "Une expérience immersive et élégante",
     text: "Offrez à vos invités une parenthèse hors du temps où le son du piano et le goût des cocktails s’unissent pour des souvenirs inoubliables.",
-    src: mojito,
+    src: exp,
   },
 ];
 
@@ -210,18 +214,17 @@ export const PrestaTextGames = {
 
 export const GamesContent = [
   {
-    url: ["test", "test2", "test3"],
+    src: "/babyfoot.png",
     title: "Bayby foot",
     text: "Défiez vos amis ",
-    src: piano,
   },
   {
-    url: ["test", "test2", "test3"],
+    src: "/fliper.png",
     title: "Flipper",
     text: "Ambiance rétro ",
   },
   {
-    url: ["test", "test2", "test3"],
+    src: "/piano.jpg",
     title: "Piano bar",
     text: "Une touche d'élégance ",
   },

@@ -4,7 +4,7 @@ import Footer from "./components/footer/Footer";
 import NavBar from "./components/nav/NavBar.jsx";
 import React, { useState } from "react";
 import ConditionalBookingButton from "./components/ConditionalBoookingBtn";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 import { Montserrat, Oswald } from "next/font/google";
 
 const myFont = localFont({
@@ -66,5 +66,5 @@ export default function RootLayout({
       </body>
     </html>
   );
-  1;
+  
 }

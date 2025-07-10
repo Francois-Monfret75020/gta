@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.body {   font-family: var(--gta-font);}
+.body {
+  font-family: var(--gta-font);
+}
 
 .title {
   font-family: var(--font-montserrat);
-
 }
 
 .sub-title {
@@ -18,13 +18,11 @@
 
 .text {
   font-family: var(--font-oswald);
-
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 
 .title-info {
   font-family: var(--font-montserrat);
@@ -40,16 +38,17 @@ html {
   color: white;
   font-size: 1.125rem; /* text-lg */
   font-weight: 200; /* font-thin */
-
 }
 
-@media (min-width: 768px) { /* md */
+@media (min-width: 768px) {
+  /* md */
   .text-info {
     font-size: 1.5rem; /* text-2xl */
   }
 }
 
-@media (min-width: 1024px) { /* lg */
+@media (min-width: 1024px) {
+  /* lg */
   .text-info {
     font-size: 1.875rem; /* text-3xl */
   }
@@ -61,7 +60,8 @@ body {
   overflow-x: hidden;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -82,16 +82,15 @@ img, video {
 
 .neon-footer {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 -0.5em 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  box-shadow: inset 0 -0.5em 0.5em 0 var(--clr-neon),
+    0 0 0.5em 0 var(--clr-neon);
   position: relative;
 }
 
 .neon-button-desktop {
   /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-
 }
-
 
 .neon-button-booking {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
@@ -112,38 +111,28 @@ img, video {
   color: var(--clr-bg);
 }
 
-
-
 .neon-text-white {
-  text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
+  text-shadow: 0 0 0.25em hsl(0 0% 100% / 0.8), 0 0 0.75em currentColor,
+    0 0 1.5em currentColor;
   font-family: var(--font-oswald);
   color: white;
-  
 }
 
 .neon-text-green {
   text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
   font-family: var(--gta-font);
   color: var(--clr-neon);
-  
 }
-
-
-
 
 .neon-title-white {
-  text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
   font-family: var(--gta-font);
   color: white;
-  
 }
-
 
 .neon-title-green {
   text-shadow: 0 0 0.125em hsl(0 0% 1% / 0.3), 0 0 0.45em currentColor;
   font-family: var(--gta-font);
   color: var(--clr-bg);
-  
 }
 
 .neon-logo-tik-tok:hover {
@@ -195,7 +184,6 @@ img, video {
 .neon-button:focus::after {
   opacity: 1;
 }
-
 
 .neon-button-booking::before {
   pointer-events: none;

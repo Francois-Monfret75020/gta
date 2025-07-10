@@ -16,9 +16,10 @@ const presta = () => {
   return (
     <main className="h-full w-screen bg-black overflow-x-hidden ">
       <HeroPrestaPhoto
-        src={HeroPrestaMariage.src}
+        src="/marriage3.jpg"
         alt={HeroPrestaMariage.alt}
         info={false}
+        marriage={true}
       />
       <div
         className="w-full bg-black h-auto flex justify-center items-center"
@@ -57,7 +58,7 @@ const presta = () => {
             key={index}
             title={game.title}
             text={game.text}
-            url={game.url} // Pass the entire array of URLs
+            src={game.src} // Pass the entire array of URLs
             initialX={index % 2 === 0 ? '-100%' : '100%'} 
           />
         ))}

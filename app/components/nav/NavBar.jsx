@@ -19,7 +19,6 @@ import clsx from "clsx";
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
 
-
   const [linkEffect, setlinkEffect] = useState(false);
   const [linkEffect2, setlinkEffect2] = useState(false);
   const [linkEffect3, setlinkEffect3] = useState(false);
@@ -39,12 +38,10 @@ const NavBar = () => {
     zeroScroll();
   };
 
-
   const toggleOpenDesktop = () => {
     setOpen(!isOpen);
     zeroScroll();
   };
-
 
   const zeroScroll = () => {
     if (!isOpen) {
@@ -94,6 +91,7 @@ const NavBar = () => {
                   name={"Vos prestation"}
                   href={"/prestation"}
                   nav={gameNavigation}
+                  isNavbarOpen={isOpen}
                 />
               </motion.div>
 
@@ -166,7 +164,11 @@ const NavBar = () => {
           </Link>
           <div className="flex justify-center text-xl items-center w-full gap-x-[5%]">
             <div>
-              <FlyOutLink FlyOutContent={FlyOutMenuDesktop} name={"Prestations"}      toggleOpen={toggleOpen} />
+              <FlyOutLink
+                FlyOutContent={FlyOutMenuDesktop}
+                name={"Prestations"}
+                toggleOpen={toggleOpen}
+              />
             </div>
             <div
               className="flex justify-center items-center "
@@ -180,11 +182,7 @@ const NavBar = () => {
               onMouseEnter={() => setlinkEffect2(true)}
               onMouseLeave={() => setlinkEffect2(false)}
             >
-              <NavNeonBtnDesktop
-                href="/info"
-                text="info"
-                event={linkEffect2}
-              />
+              <NavNeonBtnDesktop href="/info" text="info" event={linkEffect2} />
             </div>
             <div
               className="flex justify-center items-center "

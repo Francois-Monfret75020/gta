@@ -16,6 +16,7 @@ const Info = () => {
         text={true}
         alt={infoData.alt}
         info={true}
+        marriage={false}
       />
       <div className="h-auto w-full bg-black flex justify-center items-center">
       <HeroPrestaText title={infoData.heroTitlle} text={infoData.heroText} />

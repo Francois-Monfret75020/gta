@@ -2,9 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import CtaBtn from "../ui/CtaBtn";
 
-const CardDemo = ({ title, text, initialX }) => {
-  const imageUrl =
-    "https://ik.imagekit.io/xgjpkseg3/BarCocktail/rodeo-project-management-software-fu4JgXaMUDQ-unsplash.jpg?updatedAt=1727706831693";
+const CardDemo = ({ title, text, initialX, src }) => {
   const refCard = useRef(null);
   const isInView = useInView(refCard, { once: true });
 
@@ -18,7 +16,7 @@ const CardDemo = ({ title, text, initialX }) => {
     >
       <div className="relative w-full h-96 rounded-md overflow-hidden shadow-xl">
         <img
-          src={imageUrl}
+          src={src}
           alt="Card Image"
           className="w-full h-full object-cover"
         />

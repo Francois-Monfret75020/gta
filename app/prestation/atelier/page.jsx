@@ -52,15 +52,15 @@ const Presta = () => {
       </div>
       <div
         id="card-container"
-            className="w-full h-auto pb-10 flex flex-col lg:flex-row  px-4 bg-black justify-center gap-y-12 md:gap-x-20 items-center "
+        className="w-full h-auto pb-10 flex flex-col lg:flex-row  px-4 bg-black justify-center gap-y-12 md:gap-x-20 items-center "
       >
         {GamesContent.map((game, index) => (
           <CardDemo
             key={index}
             title={game.title}
             text={game.text}
-            url={game.url} // Pass the entire array of URLs
-            initialX={index % 2 === 0 ? '-100%' : '100%'} 
+            src={game.src} // Pass the src property
+            initialX={index % 2 === 0 ? "-100%" : "100%"}
           />
         ))}
       </div>

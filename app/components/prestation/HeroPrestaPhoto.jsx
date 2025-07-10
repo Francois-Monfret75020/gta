@@ -3,24 +3,29 @@ import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
-const HeroPresta = ({ src, height, text, alt, info }) => {
+const HeroPresta = ({ src, height, text, alt, info, marriage }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-
   return (
-    <div ref={ref} className="relative sm:h-[60vh] h-[30vh]" style={{ height: height }}>
+    <div
+      ref={ref}
+      className="relative h-[40vh] sm:h-[60vh] md:h-[50vh] xl:max-h-[60vh]"
+      style={{ height: height }}
+    >
       <Image
         src={src}
         alt={alt}
         fill
-        style={{ objectFit: "cover" }}
+        style={{
+          objectFit: "cover",
+          objectPosition: marriage ? "center 40%" : "center",
+        }}
         priority
         quality={100}
+        className="xl:object-contain "
       />
-      {info && (
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      )}
+      {info && <div className="absolute inset-0 bg-black bg-opacity-50"></div>}
       {text && (
         <motion.div
           initial={{ opacity: 0, x: -1000 }}
@@ -33,7 +38,9 @@ const HeroPresta = ({ src, height, text, alt, info }) => {
           }}
         >
           <h2 className="title-info">Bar cocktails Event</h2>
-          <h3 className="text-info">Les spécialistes du bar mobile événementiel</h3>
+          <h3 className="text-info">
+            Les spécialistes du bar mobile événementiel
+          </h3>
         </motion.div>
       )}
     </div>

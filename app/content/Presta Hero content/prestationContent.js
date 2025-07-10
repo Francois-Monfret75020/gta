@@ -1,7 +1,6 @@
 import team from "../../../public/gtaTeam.png";
 import mariage from "../../../public/gtaCoupleMobile.png";
-import cocktail from "../../../public/gtaAtelier.png";
-import piano from "../../../public/gtaPiano.png";
+import cocktail from "../../../public/gtaAtelierMobile.png";
 import piano2 from "../../../public/gtaPiano.png";
 import privatisation from "../../../public/gtaPrivate.png";
 

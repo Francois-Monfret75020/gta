@@ -1,7 +1,7 @@
 import medericFlame from "../../../public/medericFlame.jpeg";
 
-import tout from "../../../public/tout.jpg" 
-import collectif from "../../../public/collectif.jpg"
+import tout from "../../../public/tout.jpg";
+import collectif from "../../../public/collectif.jpg";
 
 export const infoData = {
   src: medericFlame,
@@ -25,7 +25,6 @@ export const experienceArray = [
   { yearsOfExperience: 20000, info: "cocktails servis" },
   { yearsOfExperience: 80, info: "cocktails signatures créés" },
   { yearsOfExperience: 380, info: "prestations bars mobiles" },
-
 ];
 
 export const infoData2 = [

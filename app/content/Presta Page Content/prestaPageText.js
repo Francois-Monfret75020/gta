@@ -15,7 +15,7 @@ import jongle from "../../../public/jongle.jpeg";
 import team2 from "../../../public/entreprise.jpg";
 import bar from "../../../public/bar.png";
 import mede from "../../../public/medericFlame.jpeg";
-import choix from "../../../public/choix.JPG";
+import choix from "../../../public/choix.jpg";
 
 //---------------------------------------------MARIAGE---------------------------------------------
 

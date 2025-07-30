@@ -1,5 +1,5 @@
 import medericFlame from "../../../public/medericFlame.jpeg";
-import cocktail from "../../../public/atelier.jpg";
+
 import tout from "../../../public/tout.jpg" 
 import collectif from "../../../public/collectif.jpg"
 

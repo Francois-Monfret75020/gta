@@ -1,5 +1,4 @@
 import medericFlame from "../../../public/medericFlame.jpeg";
-
 import tout from "../../../public/tout.jpg";
 import collectif from "../../../public/collectif.jpg";
 

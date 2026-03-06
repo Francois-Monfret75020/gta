@@ -9,18 +9,31 @@ const VideoHero = () => {
   const isInView = useInView(textRef, { once: true });
 
   return (
-    <div className="overflow-hidden flex-shrink-0 h-screen w-screen relative">
+    <div className="overflow-hidden flex-shrink-0 h-screen w-screen relative bg-black">
+      {/* Fond flouté pour remplir les côtés sur grand écran */}
       <video
         autoPlay
         playsInline
         loop
         muted
-        className="w-full h-screen object-none"
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover scale-110 blur-md opacity-40"
       >
         <source src="/heroVideo.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la balise vidéo.
       </video>
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+      {/* Vidéo principale centrée, ratio naturel préservé */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <video
+          autoPlay
+          playsInline
+          loop
+          muted
+          className="h-full w-auto max-w-none"
+        >
+          <source src="/heroVideo.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
         <motion.div
           ref={textRef}

@@ -43,7 +43,7 @@ const BookingFull = () => {
           WhatsApp ou par téléphone, email. Vous pouvez aussi directement
           réserver via Calendly. Nous serons ravis de répondre à toutes vos
           questions et de vous fournir un devis dans les plus brefs délais.
-          <br /> <br /> Merci d’avance ❤️
+          <br /> <br /> Merci d’avance 
           <br /> <br /> Bar Events | Votre prestataire de bars à cocktails.
         </p>
         <div

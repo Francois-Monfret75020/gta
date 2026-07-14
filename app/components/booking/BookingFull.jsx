@@ -13,8 +13,8 @@ const contactMethods = [
   },
   {
     icon: <LuPhoneCall size={25} />,
-    href: "tel:+33631995330",
-    text: "06 31 99 53 30",
+    href: "tel:+33674560112",
+    text: "06 74 56 01 12",
     type: "internal",
   },
   {

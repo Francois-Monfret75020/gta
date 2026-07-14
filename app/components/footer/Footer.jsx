@@ -26,10 +26,10 @@ const Footer = () => {
             </Link>
           </div>
           <Link
-            href="tel:+3356869362"
+            href="tel:+33674560112"
             className="font-normal text-base  w-[35%] footer:w-[60%] min-w-[11rem] hover:text-greeno"
           >
-            06 56 86 93 62
+            06 74 56 01 12
           </Link>
           <Link
             href="mailto:cocktail-envents@gmail.com"

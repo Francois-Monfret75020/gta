@@ -67,7 +67,7 @@ const Preloader = ({ visited }) => {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="h-screen w-screen bg-black fixed  text-white z-50 flex justify-center items-center"
+      className="h-screen w-screen bg-white fixed  text-black z-50 flex justify-center items-center"
     >
       {dimension.width > 0 && (
         <>
@@ -75,9 +75,9 @@ const Preloader = ({ visited }) => {
             variants={opacity}
             initial="initial"
             animate="enter"
-            className="flex text-white text-[42px] items-center absolute z-10"
+            className="flex text-black text-[42px] items-center absolute z-10"
           >
-            <span className="block w-[10px] h-[10px] bg-white rounded-full mr-[10px]"></span>
+            <span className="block w-[10px] h-[10px] bg-black rounded-full mr-[10px]"></span>
             {words[index]}
           </motion.p>
           <svg style={svgStyles}>
@@ -86,6 +86,7 @@ const Preloader = ({ visited }) => {
               variants={curve}
               initial="initial"
               exit="exit"
+              fill="white"
             ></motion.path>
           </svg>
         </>

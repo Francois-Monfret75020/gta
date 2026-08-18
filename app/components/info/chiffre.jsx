@@ -18,7 +18,7 @@ const Chiffre = () => {
   return (
     <div
       id="chiffre-containeur"
-      className="flex flex-col w-full info:h-[30vh]  h-[400px] bg-black border-red-800  justify-center info:justify-evenly items-center text-sm"
+      className="flex flex-col w-full info:h-[30vh]  h-[400px] bg-white justify-center info:justify-evenly items-center text-sm"
       ref={ref}
     >
       <div className="grid grid-cols-2 info:grid-cols-3  w-full">
@@ -28,7 +28,7 @@ const Chiffre = () => {
             className="flex flex-col justify-center items-center p-4 "
           >
             <div className="flex relative justify-center w-full items-center">
-              <div className="flex w-full font-bold neon-text text-xl font-mono justify-center items-center">
+              <div className="flex w-full font-bold text-black text-xl font-mono justify-center items-center">
                 <div className="relative -left-[2rem] text-gray-500 font-bold text-xl">
                   +
                 </div>
@@ -43,7 +43,7 @@ const Chiffre = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center min-w-4 neon-text-white text-center">
+            <div className="flex justify-center min-w-4 text-black text-center">
               {item.info}
             </div>
           </div>

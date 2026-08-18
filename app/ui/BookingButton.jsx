@@ -46,7 +46,7 @@ const BookingButton = ({ text }) => {
           repeatType: "reverse",
         }}
        
-        className="px-6 py-2 flex justify-center text-sm w-24 border-2 text-white bg-black  transform  transition duration-400 border-neon font-thin neon-button-booking "
+        className="px-6 py-2 flex justify-center text-sm w-24 border-2 text-white bg-black  transform  transition duration-400 border-white font-thin "
         style={{ opacity }}
       >
         {text}

@@ -23,7 +23,7 @@ const Calendly = () => {
       className="flex flex-col h-full items-center justify-center"
     >
       <div className="flex items-center justify-center">
-        <h2 className="neon-text p-8 py-8 mt-4 text-center leading-20 font-bold tracking-tight text-5xl neon-title-green ">
+        <h2 className="text-black p-8 py-8 mt-4 text-center leading-20 font-bold tracking-tight text-5xl ">
           Reserver un rendez-vous
         </h2>
       </div>

@@ -2,15 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./components/footer/Footer";
 import NavBar from "./components/nav/NavBar.jsx";
-import React, { useState } from "react";
+import React from "react";
 import ConditionalBookingButton from "./components/ConditionalBoookingBtn";
-import localFont from "next/font/local";
-import { Montserrat, Oswald } from "next/font/google";
-
-const myFont = localFont({
-  src: "../public/font/pricedown.otf",
-  variable: "--gta-font",
-});
+import { Montserrat, Roboto } from "next/font/google";
 
 export const montserrat = Montserrat({
   subsets: ["latin"],
@@ -19,10 +13,10 @@ export const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-export const oswald = Oswald({
-  weight: ["200", "300", "400", "500", "600", "700"],
+export const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
-  variable: "--font-oswald",
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -37,11 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={myFont.className}
-      suppressHydrationWarning={true}
-    >
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <meta
           name="viewport"
@@ -51,7 +41,7 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`${montserrat.variable} ${oswald.variable}`}
+        className={`${montserrat.variable} ${roboto.variable}`}
       >
         <header className="sticky top-0 w-full z-10">
           <NavBar />
@@ -60,7 +50,7 @@ export default function RootLayout({
           {children} <ConditionalBookingButton />
         </main>
 
-        <footer className="h-auto  bg-black w-full">
+        <footer className="h-auto  bg-white w-full">
           <Footer />
         </footer>
       </body>

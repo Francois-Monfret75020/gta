@@ -35,10 +35,10 @@ const BookingFull = () => {
         id="whatsapp-containeur"
         className="flex flex-col h-full lg:h-screen items-center justify-center w-full text-center lg:mt-8 "
       >
-        <h2 className="p-8 py-8 mt-4 font-bold tracking-tight text-5xl pt-20 lg:pt-10 font-oswald neon-title-green">
+        <h2 className="p-8 py-8 mt-4 font-bold tracking-tight text-5xl pt-20 lg:pt-10 font-roboto text-black">
           Contactez-nous
         </h2>
-        <p className="p-4 lg:w-[70%] lg:height-[40%] w-[85%] text:xl md:text-2xl leading-8 relative lg:-bottom-[2rem] neon-text-white">
+        <p className="p-4 lg:w-[70%] lg:height-[40%] w-[85%] text:xl md:text-2xl leading-8 relative lg:-bottom-[2rem] text-black">
           Pour obtenir un devis rapidement, il suffit de nous contacter via
           WhatsApp ou par téléphone, email. Vous pouvez aussi directement
           réserver via Calendly. Nous serons ravis de répondre à toutes vos
@@ -53,7 +53,7 @@ const BookingFull = () => {
           {contactMethods.map((method, index) => (
             <span
               key={index}
-              className="bg-neon hover:text-black flex items-center justify-center p-6 rounded-md gap-x-4 w-full max-w-64"
+              className="bg-black text-white hover:bg-gray-800 flex items-center justify-center p-6 rounded-md gap-x-4 w-full max-w-64"
             >
               {method.icon}
               <a

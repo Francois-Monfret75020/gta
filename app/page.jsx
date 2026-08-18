@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <main className="relative bg-black overflow-x-hidden flex flex-col">
+      <main className="relative bg-white overflow-x-hidden flex flex-col">
         <AnimatePresence mode="wait">
           {isLoaded && <Preloader />}
         </AnimatePresence>
@@ -45,13 +45,8 @@ const Home = () => {
               text={
                 "Spécialistes du bar mobile événementiel, nous sommes une équipe de mixologues et flair bartender (barman jongleur, cracheur de feu) créant ainsi une véritable animation. Nous proposons un service de bar à cocktail sur mesure, à thèmes, utilisant des produits frais, notamment un large choix de purées de fruits exotiques 100% fruit, ainsi que des jus et sirops maison."
               }
-              type={"mariage"}
             />
-            <HeroPrestaText
-              title={"Nos Prestations : "}
-              text={""}
-              type={"mariage"}
-            />
+            <HeroPrestaText title={"Nos Prestations : "} text={""} />
           </div>
           <div className="w-full max-w-[1200px] mx-auto flex flex-wrap justify-center gap-8 py-10">
             {prestaData.map((prestaData, index) => (

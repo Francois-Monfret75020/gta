@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -15,7 +16,7 @@ const ListItem = ({ text, index }) => {
       }}
       transition={{ duration: 0.5 }}
       href={`#title-text-and-image-container${index + 1}`}
-      className="flex items-center w-[19rem] md:w-[35rem] bg-white text-center h-[5.5rem] p-2 hover:bg-black hover:text-neon rounded-md"
+      className="flex items-center w-[19rem] md:w-[35rem] bg-white text-center h-[5.5rem] p-2 border border-gray-200 hover:bg-black hover:text-white hover:border-black rounded-md transition-colors"
     >
       <div className="text-2xl font-thin flex items-center justify-center w-12 md:w-32 h-12">
         {index + 1}
@@ -29,11 +30,11 @@ const ListItem = ({ text, index }) => {
 
 const List = ({ title, textArray, src }) => {
   return (
-    <div className="relative flex-col bg-black flex items-center justify-center p-3">
+    <div className="relative flex-col bg-white flex items-center justify-center p-3">
       <div className="relative flex flex-col p-4 h-full w-full items-center justify-center">
         <div className="flex items-center justify-center w-full">
-          <div className="bg-neon p-6 h-auto sm:h-[100px] sm:w-[800px] md:w-[600px] md:text-[25px] text-[22px] uppercase font-normal text-center flex items-center justify-center relative mb-10 rounded-sm">
-            <h2 className="text-black font-montserrat sub-title">{title}</h2>
+          <div className="bg-black p-6 h-auto sm:h-[100px] sm:w-[800px] md:w-[600px] md:text-[25px] text-[22px] uppercase font-normal text-center flex items-center justify-center relative mb-10 rounded-sm">
+            <h2 className="text-white sub-title">{title}</h2>
           </div>
         </div>
 

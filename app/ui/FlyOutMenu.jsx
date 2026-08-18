@@ -1,46 +1,49 @@
-import React, { useEffect, useState, useRef} from "react";
-import Image from "next/image";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { prestaData } from "../content/Presta Hero content/prestationContent";
 import { usePathname } from "next/navigation";
-import clsx from "clsx"; // Import clsx
+import clsx from "clsx";
+import { prestaData } from "../content/Presta Hero content/prestationContent";
 
-const FlyOutMenu = ({ toggleOpen }) => {
+const FlyOutMenu = ({ toggleOpen, variant = "mobile" }) => {
   const [data, setData] = useState([]);
   const pathname = usePathname();
-  const audioRef = useRef(null);
+  const isMobile = variant === "mobile";
 
   useEffect(() => {
-    // Simulate fetching data
     setData(prestaData);
   }, []);
 
-  const combinedClickHandler = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-
-   
-      setTimeout(() => {
-        toggleOpen();
-      }, 2500); // Délai de 1.5 secondes (1500 millisecondes)
+  const handleItemClick = () => {
+    if (isMobile) {
+      setTimeout(toggleOpen, 2500);
     }
   };
 
   return (
-    <div className="flex flex-col h-auto p-6 shadow-xl gap-x-6  ">
-          <audio ref={audioRef} src="/sound.mp3" preload="auto" />
+    <div
+      className={
+        isMobile
+          ? "flex flex-col h-auto p-6 shadow-xl gap-x-6"
+          : "flex flex-col h-[25rem] p-10 shadow-xl justify-center gap-y-4"
+      }
+    >
       {data.map((item, index) => (
         <div
           key={index}
           className="relative mb-4 w-full flex justify-around gap-y-3"
-          onClick={combinedClickHandler}
+          onClick={handleItemClick}
         >
-          <Link href={item.link} onClick={toggleOpen}>
+          <Link href={item.link} onClick={isMobile ? toggleOpen : undefined}>
             <div className="flex flex-col items-center justify-center relative cursor-pointer h-full">
               <span
                 className={clsx(
-                  "top-12 text-center bg-opacity-50 text-neon-white hover:text-glow p-1",
-                  { "bg-neon rounded-md px-2 py-2": pathname === item.link } // Classe conditionnelle
+                  "top-12 text-center bg-opacity-50 text-black hover:opacity-70 p-1",
+                  isMobile ? "" : "md:text-base lg:text-lg",
+                  {
+                    [`bg-black text-white rounded-md px-2 ${isMobile ? "py-2" : ""}`]:
+                      pathname === item.link,
+                  }
                 )}
               >
                 {item.navTitlle}

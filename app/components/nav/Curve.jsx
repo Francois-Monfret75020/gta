@@ -29,7 +29,7 @@ const Curve = () => {
         animate="enter"
         exit="exit"
         d={initialPath}
-        fill="black"
+        fill="white"
       ></motion.path>
     </svg>
   );

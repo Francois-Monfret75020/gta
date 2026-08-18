@@ -1,5 +1,3 @@
-import { info } from "console";
-import { Oswald } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -12,16 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         montserrat: ["var(--font-montserrat)", "Montserrat", "sans-serif"],
-        oswald: ["var(--font-oswald)", "Oswald", "sans-serif"],
-        gta: ["var(--gta-font)"],
-      },
-      colors: {
-        creme: "#E9E3D1",
-        greeno: "#00fe9b",
-        blacko: "#001D1B",
-        neonGlow: "#02c435",
-        neon: "#00fe9b",
-        pinkGta: "#c812aa",
+        roboto: ["var(--font-roboto)", "Roboto", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -33,28 +22,9 @@ const config: Config = {
         footer: "652px",
         info: "900px",
       },
-      // fontFamily: { gta: ["var(--gta-font)"] }, // Removed duplicate property
     },
   },
-  plugins: [
-    require("@tailwindcss/aspect-ratio"),
-    function ({
-      addUtilities,
-    }: {
-      addUtilities: (
-        utilities: Record<string, any>,
-        variants?: string[]
-      ) => void;
-    }) {
-      const newUtilities = {
-        ".text-glow": {
-          textShadow:
-            "0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor",
-        },
-      };
-      addUtilities(newUtilities, ["hover"]);
-    },
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
 
 export default config;

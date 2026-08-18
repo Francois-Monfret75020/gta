@@ -6,7 +6,7 @@ const CtaBtn = ({ text }) => {
     <Link
       href="/booking"
       passHref
-      className="bg-neon text-blacko font-montserrat text-[12px] py-4 px-4 rounded-md shadow-lg hover:neon-button transition duration-300 ease-in-out transform hover:scale-105"
+      className="bg-white text-black font-roboto text-[12px] py-4 px-4 rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200"
     >
       {text}
     </Link>

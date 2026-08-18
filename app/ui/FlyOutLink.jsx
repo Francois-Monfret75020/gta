@@ -1,17 +1,9 @@
 // FlyoutLink.jsx
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import FlyOutNeonBtnDeskstop from "./FlyOutNeonBtnDeskstop";
+import FlyOutButtonDesktop from "./FlyOutButtonDesktop";
 
-const FlyoutLink = ({
-  name,
-  FlyOutContent,
-  toggleOpen,
-  pathname,
-  href,
-  event,
-  isNavbarOpen,
-}) => {
+const FlyoutLink = ({ name, FlyOutContent, toggleOpen, href, isNavbarOpen }) => {
   const [isOpen, setOpen] = useState(false);
 
   const showFlyOut = FlyOutContent && isOpen;
@@ -30,13 +22,7 @@ const FlyoutLink = ({
       className=" h-fit w-fit relative  z-50"
       id="flyout-link"
     >
-      <FlyOutNeonBtnDeskstop
-        text={name}
-        href={href}
-        pathname={pathname}
-        event={isOpen}
-        className="z-50"
-      />
+      <FlyOutButtonDesktop text={name} href={href} event={isOpen} />
 
       <AnimatePresence>
         {showFlyOut && (
@@ -46,7 +32,7 @@ const FlyoutLink = ({
             exit={{ opacity: 0, y: 20 }}
             style={{ x: "-50%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="absolute bg-blacko z-50 rounded-md -top-[-5rem]  md:-top-[-5rem] border-2  neon-button-desktop  border-neon left-[6rem] md:left-1/2   "
+            className="absolute bg-white z-50 rounded-md -top-[-5rem]  md:-top-[-5rem] border border-black/10 shadow-xl left-[6rem] md:left-1/2   "
           >
             <div className="absolute -top-10 left-0 h-6 right-0 " />
             <FlyOutContent toggleOpen={toggleOpen} className="z-50" />

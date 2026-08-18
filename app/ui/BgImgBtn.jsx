@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const BgImgBtn = ({ href, text, event }) => {
   return (
-    <div className="relative border-2 cursor-pointer bg-transparent overflow-hidden  py-2 px-4 text-lg border-white font-thin neon-text-white neon-button">
+    <div className="relative border-2 cursor-pointer bg-transparent overflow-hidden  py-2 px-4 text-lg border-white font-thin text-white">
       <motion.div
-        className="absolute inset-0 bg-neon origin-left"
+        className="absolute inset-0 bg-white origin-left"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: event ? 1 : 0 }}
         transition={{ duration: 0.5 }}

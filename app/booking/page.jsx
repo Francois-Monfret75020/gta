@@ -3,7 +3,7 @@ import Booking from "../components/booking/BookingFull";
 
 const BookingPage = () => {
   return (
-    <div className="h-auto w-full bg-black">
+    <div className="h-auto w-full bg-white">
       <Booking />
     </div>
   );

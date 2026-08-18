@@ -1,8 +1,9 @@
+"use client";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import CtaBtn from "../ui/CtaBtn";
+import CtaBtn from "./CtaBtn";
 
-const CardDemo = ({ title, text, initialX, src }) => {
+const GameCard = ({ title, text, initialX, src }) => {
   const refCard = useRef(null);
   const isInView = useInView(refCard, { once: true });
 
@@ -24,7 +25,7 @@ const CardDemo = ({ title, text, initialX, src }) => {
           <div className="flex flex-col gap-y-4 w-[50%]">
             {" "}
             <h3 className="font-bold text-xl">{title}</h3>
-            <p className="text-base font-montserrat">{text}</p>
+            <p className="text-base font-roboto">{text}</p>
           </div>
           <div className="flex  justify-end items-center h-full w-[50%]">
             <CtaBtn text="CHOISIR" className="w-[10%]" />
@@ -36,4 +37,4 @@ const CardDemo = ({ title, text, initialX, src }) => {
   );
 };
 
-export default CardDemo;
+export default GameCard;

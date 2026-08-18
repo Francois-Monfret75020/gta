@@ -3,18 +3,15 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FlyOutLink from "../../ui/FlyOutLink";
 import FlyOutMenu from "../../ui/FlyOutMenu";
-import FlyOutMenuDesktop from "../../ui/FlyOutMenuDekstop";
 import Curve from "./Curve";
 import Hamburger from "hamburger-react";
-import NavNeonBtn from "../../ui/MobileNavNeonBtn";
-import NavNeonBtnDesktop from "../../ui//NavNeonBtnDesktop";
+import NavButtonMobile from "../../ui/MobileNavButton";
+import NavButtonDesktop from "../../ui/NavButtonDesktop";
 import { menuSlide, linkAnimation } from "../../anim/curveAnim";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 import "./style.css";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import clsx from "clsx";
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -22,23 +19,11 @@ const NavBar = () => {
   const [linkEffect, setlinkEffect] = useState(false);
   const [linkEffect2, setlinkEffect2] = useState(false);
   const [linkEffect3, setlinkEffect3] = useState(false);
-  const [gameNavigation, setGameNavigation] = useState("");
 
   const navRef = useRef(null);
   const hamburgerRef = useRef(null);
 
-  const pathname = usePathname();
-
-  const handleClickNav = () => {
-    setGameNavigation("test");
-  };
-
   const toggleOpen = () => {
-    setOpen(!isOpen);
-    zeroScroll();
-  };
-
-  const toggleOpenDesktop = () => {
     setOpen(!isOpen);
     zeroScroll();
   };
@@ -55,7 +40,7 @@ const NavBar = () => {
     <>
       {/* Mobile Navbar */}
       <div
-        className="bg-greeno top-8 right-4 h-12 w-12 flex items-center justify-center z-50 rounded-full fixed lg:hidden "
+        className="bg-black top-8 right-4 h-12 w-12 flex items-center justify-center z-50 rounded-full fixed lg:hidden "
         ref={hamburgerRef}
         onClick={zeroScroll}
       >
@@ -63,6 +48,7 @@ const NavBar = () => {
           toggled={isOpen}
           toggle={setOpen}
           size={19}
+          color="#ffffff"
           className="flex justify-center items-center"
         />
       </div>
@@ -75,10 +61,10 @@ const NavBar = () => {
             initial="initial"
             animate="enter"
             exit="exit"
-            className="fixed flex h-[100vh] bg-black bg-opacity-90 text-white items-center justify-around flex-col w-full  top-0 left-0"
+            className="fixed flex h-[100vh] bg-white bg-opacity-95 text-black items-center justify-around flex-col w-full  top-0 left-0"
           >
             <div className="flex items-center justify-start h-[10%] text-gray-500 border-b border-gray-500 w-[80%] mb-10">
-              <Link href="/" className={clsx()} onClick={toggleOpen}>
+              <Link href="/" onClick={toggleOpen}>
                 Home
               </Link>
             </div>
@@ -90,21 +76,19 @@ const NavBar = () => {
                   toggleOpen={toggleOpen}
                   name={"Vos prestation"}
                   href={"/prestation"}
-                  nav={gameNavigation}
                   isNavbarOpen={isOpen}
                 />
               </motion.div>
 
               <motion.div {...linkAnimation}>
-                <NavNeonBtn
+                <NavButtonMobile
                   href="/bar"
                   toggleOpen={toggleOpen}
                   text={"Vos Bars"}
-                  OnClickNav={handleClickNav}
                 />
               </motion.div>
               <motion.div {...linkAnimation}>
-                <NavNeonBtn
+                <NavButtonMobile
                   href="/info"
                   toggleOpen={toggleOpen}
                   text={"Notre Histoire"}
@@ -112,7 +96,7 @@ const NavBar = () => {
               </motion.div>
 
               <motion.div {...linkAnimation}>
-                <NavNeonBtn
+                <NavButtonMobile
                   href="/booking"
                   toggleOpen={toggleOpen}
                   text={"Booking"}
@@ -122,7 +106,7 @@ const NavBar = () => {
             <div className="flex text-xs gap-8 items-center mb-10 h-[20%]">
               <motion.div
                 {...linkAnimation}
-                className="flex items-center neon-text gap-1"
+                className="flex items-center text-black gap-1"
               >
                 <AiFillTikTok size="1.4rem" />
                 <Link href="/none" onClick={toggleOpen}>
@@ -131,7 +115,7 @@ const NavBar = () => {
               </motion.div>
               <motion.div
                 {...linkAnimation}
-                className="flex items-center neon-text gap-1"
+                className="flex items-center text-black gap-1"
               >
                 <FaInstagram size="1.4rem" />
                 <Link href="/none" onClick={toggleOpen}>
@@ -140,7 +124,7 @@ const NavBar = () => {
               </motion.div>
               <motion.div
                 {...linkAnimation}
-                className="flex items-center neon-text  gap-1"
+                className="flex items-center text-black  gap-1"
               >
                 <FaFacebook size="1.4rem" />
                 <Link href="/none" onClick={toggleOpen}>
@@ -155,7 +139,7 @@ const NavBar = () => {
 
       {/* Desktop Navbar */}
       <div
-        className="hidden lg:flex w-full items-center h-[9vh] min-h-[2.5rem] bg-black border-b-2  border-neon text-white"
+        className="hidden lg:flex w-full items-center h-[9vh] min-h-[2.5rem] bg-white border-b border-black/10 text-black"
         style={{ zIndex: 50 }}
       >
         <div className="flex w-full items-center justify-center py-4 px-8">
@@ -165,7 +149,9 @@ const NavBar = () => {
           <div className="flex justify-center text-xl items-center w-full gap-x-[5%]">
             <div>
               <FlyOutLink
-                FlyOutContent={FlyOutMenuDesktop}
+                FlyOutContent={(props) => (
+                  <FlyOutMenu {...props} variant="desktop" />
+                )}
                 name={"Prestations"}
                 toggleOpen={toggleOpen}
               />
@@ -175,21 +161,21 @@ const NavBar = () => {
               onMouseEnter={() => setlinkEffect(true)}
               onMouseLeave={() => setlinkEffect(false)}
             >
-              <NavNeonBtnDesktop href="/bar" text="Bars" event={linkEffect} />
+              <NavButtonDesktop href="/bar" text="Bars" event={linkEffect} />
             </div>
             <div
               className="flex justify-center items-center "
               onMouseEnter={() => setlinkEffect2(true)}
               onMouseLeave={() => setlinkEffect2(false)}
             >
-              <NavNeonBtnDesktop href="/info" text="info" event={linkEffect2} />
+              <NavButtonDesktop href="/info" text="info" event={linkEffect2} />
             </div>
             <div
               className="flex justify-center items-center "
               onMouseEnter={() => setlinkEffect3(true)}
               onMouseLeave={() => setlinkEffect3(false)}
             >
-              <NavNeonBtnDesktop
+              <NavButtonDesktop
                 href="/booking"
                 text="Booking"
                 event={linkEffect3}
@@ -197,13 +183,22 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex items-center justify-center space-x-4">
-            <Link className="neon-logo-tik-tok" href="/resaux">
+            <Link
+              className="text-black/60 hover:text-black transition-colors"
+              href="/resaux"
+            >
               <AiFillTikTok size="1.6rem" />
             </Link>
-            <Link className="neon-logo" href="/resaux">
+            <Link
+              className="text-black/60 hover:text-black transition-colors"
+              href="/resaux"
+            >
               <FaInstagram size="1.6rem" />
             </Link>
-            <Link className="neon-logo" href="/resaux">
+            <Link
+              className="text-black/60 hover:text-black transition-colors"
+              href="/resaux"
+            >
               <FaFacebook size="1.4rem" />
             </Link>
           </div>

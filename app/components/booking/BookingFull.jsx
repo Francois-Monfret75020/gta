@@ -38,7 +38,7 @@ const BookingFull = () => {
         <h2 className="p-8 py-8 mt-4 font-bold tracking-tight text-5xl pt-20 lg:pt-10 font-roboto text-black">
           Contactez-nous
         </h2>
-        <p className="p-4 lg:w-[70%] lg:height-[40%] w-[85%] text:xl md:text-2xl leading-8 relative lg:-bottom-[2rem] text-black">
+        <p className="p-4 lg:w-[70%] lg:height-[40%] w-[85%] text:xl md:text-2xl leading-8 text-black">
           Pour obtenir un devis rapidement, il suffit de nous contacter via
           WhatsApp ou par téléphone, email. Vous pouvez aussi directement
           réserver via Calendly. Nous serons ravis de répondre à toutes vos
@@ -48,7 +48,7 @@ const BookingFull = () => {
         </p>
         <div
           id="whatps-content"
-          className="w-full h-full items-center flex flex-col justify-center mt-8 gap-y-8 lg:relative lg:top-[-192px]"
+          className="w-full h-full items-center flex flex-col justify-center mt-8 gap-y-8"
         >
           {contactMethods.map((method, index) => (
             <span

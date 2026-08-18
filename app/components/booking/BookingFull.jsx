@@ -29,11 +29,11 @@ const BookingFull = () => {
   return (
     <div
       id="all-booking-type-conainter"
-      className="h-auto lg:w-screen flex lg:flex-row flex-col"
+      className="flex-1 lg:w-screen flex lg:flex-row flex-col"
     >
       <div
         id="whatsapp-containeur"
-        className="flex flex-col h-full lg:h-screen items-center justify-center w-full text-center lg:mt-8 "
+        className="flex flex-col flex-1 items-center justify-center w-full text-center"
       >
         <h2 className="p-8 py-8 mt-4 font-bold tracking-tight text-5xl pt-20 lg:pt-10 font-roboto text-black">
           Contactez-nous

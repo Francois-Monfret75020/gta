@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Slider from "./components/hero/VideoHero";
 import { prestaData } from "./content/Presta Hero content/prestationContent";
-import Card from "./ui/Card"; // Assurez-vous que le chemin est correct
 import Preloader from "./components/preloader/preloader";
 import HeroPrestaText from "./components/prestation/HeroPrestaText";
+import ParallaxGallery from "./components/prestation/ParallaxGallery";
 
 const Home = () => {
   const [isLoaded, setIsLoading] = useState(true);
@@ -48,13 +48,7 @@ const Home = () => {
             />
             <HeroPrestaText title={"Nos Prestations : "} text={""} />
           </div>
-          <div className="w-full max-w-[1200px] mx-auto flex flex-wrap justify-center gap-8 py-10">
-            {prestaData.map((prestaData, index) => (
-              <div key={index} className="w-full lg:w-[500px]">
-                <Card {...prestaData} href={prestaData.link} />
-              </div>
-            ))}
-          </div>
+          <ParallaxGallery data={prestaData} />
         </div>
       </main>
     </>

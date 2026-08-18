@@ -40,9 +40,8 @@ const BookingFull = () => {
         </h2>
         <p className="p-4 lg:w-[70%] lg:height-[40%] w-[85%] text:xl md:text-2xl leading-8 text-black">
           Pour obtenir un devis rapidement, il suffit de nous contacter via
-          WhatsApp ou par téléphone, email. Vous pouvez aussi directement
-          réserver via Calendly. Nous serons ravis de répondre à toutes vos
-          questions et de vous fournir un devis dans les plus brefs délais.
+          WhatsApp, par téléphone ou par email. Nous répondons à toutes vos
+          questions et vous fournissons un devis en moins de 24h.
           <br /> <br /> Merci d’avance 
           <br /> <br /> Bar Events | Votre prestataire de bars à cocktails.
         </p>

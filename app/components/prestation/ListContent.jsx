@@ -30,7 +30,7 @@ const ListContent = ({ content, show }) => {
               {/* Contenu Textuel */}
               <div
                 className={`flex-1 p-6 sm:p-8 lg:p-12 flex flex-col justify-center relative z-10 ${
-                  isLandscape ? "lg:w-[40%] lg:flex-none" : ""
+                  isLandscape ? "lg:w-[45%] lg:flex-none" : ""
                 }`}
               >
                 {/* Titre */}
@@ -38,7 +38,7 @@ const ListContent = ({ content, show }) => {
                   <AniamtionText
                     text={item.title}
                     el="h2"
-                    className=" w-[250px] md:w-[600px] lg:w-[800px] text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-black leading-tight tracking-wide"
+                    className="w-full text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-black leading-tight tracking-wide"
                     once={true}
                   />
 
@@ -64,7 +64,7 @@ const ListContent = ({ content, show }) => {
                   isPortrait
                     ? "min-h-[450px] sm:min-h-[550px] lg:min-h-[650px]"
                     : "min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]"
-                } ${isLandscape ? "lg:w-[60%] lg:flex-none" : ""}`}
+                } ${isLandscape ? "lg:w-[55%] lg:flex-none" : ""}`}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 to-black/40 z-10"></div>
                 <Image

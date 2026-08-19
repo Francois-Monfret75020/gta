@@ -54,7 +54,7 @@ const VideoHero = () => {
           animate={{ opacity: isInView ? 1 : 0 }}
           transition={{ duration: 1, delay: 3.2 }}
         >
-          <h1 className="text-6xl font-thin font-montserrat tracking-wide">
+          <h1 className="text-6xl font-bold font-montserrat tracking-wide">
             Class Cocktails
           </h1>
           <p className="text-lg font-thin mt-4  font-roboto">

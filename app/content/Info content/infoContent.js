@@ -1,5 +1,5 @@
 export const infoData = {
-  src: "/medericFlame.jpeg",
+  src: "/gallery/mede7.jpeg",
   alt: "Une mariée en robe blanche tenant un bouquet de fleurs, entourée d'invités souriants lors de son mariage",
   titleImg: "BAr-Events",
   descriptionImg: "Les spécialiste du bar mobile pour votre mariage",
@@ -24,16 +24,18 @@ export const experienceArray = [
 
 export const infoData2 = [
   {
-    src: "/tout.jpg",
+    src: "/gallery/mede5.jpg",
     alt: "Un atelier de création de cocktails avec des participant souriant, mélangeant des ingrédients et suivant les instructions du barman.",
     title: "Tout commence il y a 15 ans...",
     text: "Bar Events, c'est avant toutes choses un collectif de bartenders événementiel, c'est une famille de mixologues passionnés, décidée à révolutionner le cocktail événementiel.",
+    orientation: "portrait",
   },
 
   {
-    src: "/collectif.jpg",
+    src: "/bar.png",
     alt: "Un atelier de création de cocktails avec des participant souriant, mélangeant des ingrédients et suivant les instructions du barman.",
     title: "Notre mission :",
     text: "Bar Events, c'est avant toutes choses un collectif de bartenders événementiel, c'est une famille de mixologues passionnés, décidée à révolutionner le cocktail événementiel.",
+    orientation: "landscape",
   },
 ];

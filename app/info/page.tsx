@@ -16,14 +16,14 @@ const Info = () => {
         info={true}
         marriage={false}
       />
-      <div className="h-auto w-full bg-white flex justify-center items-center">
+      <div className="h-auto w-full bg-white flex justify-center items-center py-12 lg:py-28">
       <HeroPrestaText title={infoData.heroTitlle} text={infoData.heroText} />
       </div>
 
-      <div className="h-auto w-full bg-white border-t border-b border-black/10 flex justify-center items-center">
+      <div className="h-auto w-full bg-white border-t border-b border-black/10 flex justify-center items-center py-8 lg:py-12">
       <Chiffre />
       </div>
-      <div className="h-auto w-full bg-white flex justify-center items-center">
+      <div className="h-auto w-full bg-white flex justify-center items-center py-12 lg:py-28">
       <HeroPrestaText title={infoData.title2} text={null} />
       </div>
       <ListContent content={infoData2} show={true} />

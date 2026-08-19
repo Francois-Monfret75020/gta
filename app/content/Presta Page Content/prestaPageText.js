@@ -36,7 +36,7 @@ export const ListPrestaMariageContent = [
   {
     title: "Flair, jonglage et cracheur de feu au rendez-vous !",
     text: "Nos barmen performeurs transforment le service en véritable spectacle : flair bartending, jonglage de bouteilles et cracheur de feu rythment votre événement pour une animation à couper le souffle.",
-    src: "/medericFlame.jpeg",
+    src: "/gallery/mede7.jpeg",
   },
 ];
 
@@ -118,7 +118,7 @@ export const ListPrestaProContent = [
 export const HeroPrestaPrivate = {
   title: "NOS PRESTATIONS DE BAR COCKTAIL À DOMICILE !",
   text: "Nous intervenons à votre domicile, en intérieur ou extérieur à l'occasion d'un anniversaire, d'une crémaillère ou tout autre type d'événement, cette préstation marquera la différence",
-  src: "/bar-private.jpg",
+  src: "/gallery/place.jpeg",
   alt: "Un barman préparant des cocktails sophistiqués chez un particulier, avec divers ingrédients et bouteilles en arrière-plan",
 };
 
@@ -141,7 +141,7 @@ export const ListPrestaPrivateContent = [
   {
     title: "L'animation qui change tout chez vous",
     text: "Oubliez les soirées classiques ! Nos mixologues transforment votre maison en véritable cocktail party. En intérieur ou extérieur, on met l'ambiance et on fait la différence.",
-    src: "/serviceMede.jpeg",
+    src: "/gallery/mede3.jpeg",
   },
   {
     title: "Des cocktails maison… dans votre maison",

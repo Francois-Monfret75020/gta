@@ -154,7 +154,7 @@ export const ListPrestaPrivateContent = [
 export const HeroPrestaPiano = {
   title: "NOS PRESTATIONS PIANO BAR !",
   text: "Il s'agit du concept original d'un ancien piano droit modifier de manière à allier d'un coté un piano et de l'autre un authentique bar raffiné. Un système audio haute qualité, un pianiste, un barman inclus et d'autre musiciens selon la demande, feront également de cette préstation",
-  src: "/heroPiano.jpg",
+  src: "/gallery/place8.jpg",
   alt: "Un barman préparant des cocktails sophistiqués chez un particulier, avec divers ingrédients et bouteilles en arrière-plan",
 };
 
@@ -177,12 +177,12 @@ export const ListPrestaPianoContent = [
   {
     title: "L'alliance parfaite entre musique live et mixologie",
     text: "Un barman, un pianiste, et selon vos envies, d'autres musiciens pour créer une ambiance élégante et mémorable lors de vos événements.",
-    src: "/barmixo.jpg",
+    src: "/gallery/place9.webp",
   },
   {
     title: "Une expérience immersive et élégante",
     text: "Offrez à vos invités une parenthèse hors du temps où le son du piano et le goût des cocktails s'unissent pour des souvenirs inoubliables.",
-    src: "/exp.jpg",
+    src: "/gallery/place6.jpg",
   },
 ];
 

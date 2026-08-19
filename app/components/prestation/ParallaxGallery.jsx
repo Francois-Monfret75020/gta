@@ -15,20 +15,33 @@ const ParallaxCard = ({ item, index }) => {
   useGSAP(
     () => {
       const direction = index % 2 === 0 ? 1 : -1;
-      const amount = 20 + (index % 3) * 8;
+      const mm = gsap.matchMedia();
 
-      gsap.fromTo(
-        wrapRef.current,
-        { y: amount * direction },
+      mm.add(
         {
-          y: -amount * direction,
-          ease: "none",
-          scrollTrigger: {
-            trigger: wrapRef.current,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-          },
+          isMobile: "(max-width: 767px)",
+          isDesktop: "(min-width: 768px)",
+        },
+        (context) => {
+          const { isMobile } = context.conditions;
+          // Kept well under the vertical gap between cards so drifting
+          // cards can never visually overlap their neighbours.
+          const amount = isMobile ? 6 + (index % 3) * 3 : 18 + (index % 3) * 8;
+
+          gsap.fromTo(
+            wrapRef.current,
+            { y: amount * direction },
+            {
+              y: -amount * direction,
+              ease: "none",
+              scrollTrigger: {
+                trigger: wrapRef.current,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true,
+              },
+            }
+          );
         }
       );
 
@@ -53,7 +66,10 @@ const ParallaxCard = ({ item, index }) => {
   );
 
   return (
-    <div ref={wrapRef} className="mb-4 block w-full break-inside-avoid md:mb-6">
+    <div
+      ref={wrapRef}
+      className="mb-8 block w-full break-inside-avoid md:mb-10"
+    >
       <div className="group relative overflow-hidden rounded-md">
         <div ref={revealRef}>
           <Image
@@ -71,7 +87,7 @@ const ParallaxCard = ({ item, index }) => {
 
 const ParallaxGallery = ({ images }) => {
   return (
-    <div className="mx-auto w-full max-w-[1200px] columns-2 gap-4 overflow-hidden py-10 md:columns-3 md:gap-6">
+    <div className="mx-auto w-full max-w-[1200px] columns-2 gap-6 overflow-hidden px-4 py-10 md:columns-3 md:gap-8 md:px-0">
       {images.map((item, index) => (
         <ParallaxCard key={item.src.src} item={item} index={index} />
       ))}

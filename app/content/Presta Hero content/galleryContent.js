@@ -6,7 +6,6 @@ import mede3 from "../../../public/gallery/mede3.jpeg";
 import cocktail2 from "../../../public/gallery/cocktail2.jpeg";
 import place4 from "../../../public/gallery/place4.jpg";
 import mede4 from "../../../public/gallery/mede4.jpeg";
-import cocktail3 from "../../../public/gallery/cocktail3.jpeg";
 import place6 from "../../../public/gallery/place6.jpg";
 import mede5 from "../../../public/gallery/mede5.jpg";
 import cocktail7 from "../../../public/gallery/cocktail7.jpeg";
@@ -31,7 +30,6 @@ export const galleryImages = [
   { src: cocktail2, alt: "Cocktail coloré servi lors de l'événement" },
   { src: place4, alt: "Espace de réception aménagé pour le bar événementiel" },
   { src: mede4, alt: "Barman préparant un cocktail devant les invités" },
-  { src: cocktail3, alt: "Cocktail fraîchement préparé, présentation soignée" },
   { src: place6, alt: "Lieu de prestation avec décor bar à cocktails" },
   { src: mede5, alt: "Mixologue au shaker pendant le service" },
   { src: cocktail7, alt: "Cocktail élaboré avec garniture fraîche" },

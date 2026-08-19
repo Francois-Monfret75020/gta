@@ -3,7 +3,7 @@ import GamesGrid from "../components/prestation/GamesGrid";
 
 const Bars = () => {
   return (
-    <main className="h-screen lg:h-[70vh] w-screen bg-white overflow-x-hidden">
+    <main className="min-h-screen lg:min-h-[91vh] w-screen bg-white overflow-x-hidden">
       <div
         className="w-full h-auto flex justify-center items-center lg:pt-16"
         id="compenent-text-container"

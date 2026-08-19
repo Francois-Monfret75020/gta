@@ -195,18 +195,18 @@ export const PrestaTextGames = {
 
 export const GamesContent = [
   {
-    src: "/babyfoot.png",
-    title: "Bayby foot",
-    text: "Défiez vos amis ",
+    src: "/gallery/bar-lumiere.jpeg",
+    title: "Bar Lumineux",
+    text: "Une ambiance qui illumine la soirée ",
   },
   {
-    src: "/fliper.png",
-    title: "Flipper",
-    text: "Ambiance rétro ",
+    src: "/gallery/place2.jpeg",
+    title: "Bar Classique",
+    text: "L'élégance intemporelle ",
   },
   {
-    src: "/piano.jpg",
-    title: "Piano bar",
+    src: "/pianoBar.webp",
+    title: "Piano Bar",
     text: "Une touche d'élégance ",
   },
 ];

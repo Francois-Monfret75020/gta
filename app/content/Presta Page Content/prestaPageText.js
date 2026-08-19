@@ -146,7 +146,7 @@ export const ListPrestaPrivateContent = [
   {
     title: "Des cocktails maison… dans votre maison",
     text: "Fruits frais, flair bartending et bonne humeur : on vous prépare un mix détonant directement chez vous. L'objectif ? Créer des souvenirs inoubliables avec vos proches !",
-    src: "/mojito.jpg",
+    src: "/gallery/cocktail.jpeg",
   },
 ];
 //---------------------------------------------PIANO---------------------------------------------

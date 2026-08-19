@@ -10,7 +10,7 @@ const HeroPresta = ({ src, height, text, alt, info, marriage }) => {
   return (
     <div
       ref={ref}
-      className="relative h-[40vh] sm:h-[60vh] md:h-[50vh] xl:max-h-[60vh]"
+      className="relative h-[40vh] sm:h-[60vh] md:h-[60vh] xl:max-h-[60vh]"
       style={{ height: height }}
     >
       <Image
@@ -23,7 +23,6 @@ const HeroPresta = ({ src, height, text, alt, info, marriage }) => {
         }}
         priority
         quality={100}
-        className="xl:object-contain "
       />
       {info && <div className="absolute inset-0 bg-black bg-opacity-50"></div>}
       {text && (

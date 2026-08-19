@@ -18,15 +18,17 @@ const PrestationTemplate = ({
 }) => {
   return (
     <main className="min-h-screen bg-white w-full overflow-x-hidden">
-      <HeroPrestaPhoto
-        src={heroSrc}
-        alt={heroAlt}
-        info={false}
-        marriage={marriage}
-      />
+      <div className="w-full xl:max-w-[1600px] xl:mx-auto">
+        <HeroPrestaPhoto
+          src={heroSrc}
+          alt={heroAlt}
+          info={false}
+          marriage={marriage}
+        />
+      </div>
 
       <div
-        className="w-full h-auto flex justify-center items-center bg-white"
+        className="w-full h-auto flex justify-center items-center bg-white py-12 lg:py-24"
         id="compenent-text-container"
       >
         <HeroPrestaText title={heroTitle} text={heroText} />

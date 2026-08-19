@@ -189,8 +189,8 @@ export const ListPrestaPianoContent = [
 //---------------------------------------------GAMES---------------------------------------------
 
 export const PrestaTextGames = {
-  title: "Des Extras pour une Ambiance Unique",
-  text: "Pour vos événements, nous proposons des prestations de bar ainsi que des animations uniques : bornes d'arcade rétro, baby-foot, et piano bar. Ces options ajoutent une touche de convivialité et d'élégance, créant des moments inoubliables",
+  title: "Des Bars pour une Ambiance Unique",
+  text: "Pour vos événements, nous proposons plusieurs types de bars mobiles : bar lumineux, bar classique, et piano bar. Ces options ajoutent une touche de convivialité et d'élégance, créant des moments inoubliables",
 };
 
 export const GamesContent = [

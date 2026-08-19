@@ -18,7 +18,7 @@ const ListContent = ({ content, show }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         {content.map((item, index) => {
           const isPortrait = item.orientation === "portrait";
-          const isLandscape = item.orientation === "landscape";
+          const isLandscape = !isPortrait;
 
           return (
             <div

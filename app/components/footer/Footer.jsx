@@ -32,10 +32,10 @@ const Footer = () => {
             06 74 56 01 12
           </Link>
           <Link
-            href="mailto:cocktail-envents@gmail.com"
+            href="mailto:classecocktail@gmail.com"
             className="font-normal text-base  w-[57%] min-w-[11rem] footer:w-[100%] hover:text-black"
           >
-            cocktail-envents@gmail.com
+            classecocktail@gmail.com
           </Link>
         </section>
 

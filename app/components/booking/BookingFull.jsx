@@ -19,8 +19,8 @@ const contactMethods = [
   },
   {
     icon: <MdOutlineMailOutline size={25} />,
-    href: "mailto:cocktail@event.com",
-    text: "cocktail@event.com",
+    href: "mailto:classecocktail@gmail.com",
+    text: "classecocktail@gmail.com",
     type: "internal",
   },
 ];

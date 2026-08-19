@@ -183,6 +183,7 @@ export const ListPrestaPianoContent = [
     title: "Une expérience immersive et élégante",
     text: "Offrez à vos invités une parenthèse hors du temps où le son du piano et le goût des cocktails s'unissent pour des souvenirs inoubliables.",
     src: "/gallery/place6.jpg",
+    mobileFocus: "left",
   },
 ];
 

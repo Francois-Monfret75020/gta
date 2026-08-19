@@ -73,6 +73,12 @@ const ListContent = ({ content, show }) => {
                   fill
                   className={`object-cover transition-transform duration-700 group-hover:scale-110 ${
                     isPortrait ? "object-top" : ""
+                  } ${
+                    item.mobileFocus === "left"
+                      ? "object-left lg:object-center"
+                      : item.mobileFocus === "right"
+                      ? "object-right lg:object-center"
+                      : ""
                   }`}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   priority={index < 2}

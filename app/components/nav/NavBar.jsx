@@ -74,7 +74,7 @@ const NavBar = () => {
                 <FlyOutLink
                   FlyOutContent={FlyOutMenu}
                   toggleOpen={toggleOpen}
-                  name={"Vos prestation"}
+                  name={"Nos prestations"}
                   href={"/prestation"}
                   isNavbarOpen={isOpen}
                 />

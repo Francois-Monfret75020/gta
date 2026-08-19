@@ -19,7 +19,6 @@ import barLumiere from "../../../public/gallery/bar-lumiere.jpeg";
 import mede9 from "../../../public/gallery/mede9.jpeg";
 import coktail6 from "../../../public/gallery/coktail6.jpeg";
 import mede10 from "../../../public/gallery/mede10.jpg";
-import coktail7 from "../../../public/gallery/coktail7.jpeg";
 
 export const galleryImages = [
   { src: place, alt: "Lieu de réception avec bar à cocktails événementiel" },
@@ -43,5 +42,4 @@ export const galleryImages = [
   { src: mede9, alt: "Équipe de barmen pendant le service" },
   { src: coktail6, alt: "Cocktail préparé avec des produits frais" },
   { src: mede10, alt: "Barman en pleine préparation d'un cocktail" },
-  { src: coktail7, alt: "Cocktail signature présenté avant service" },
 ];

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Slider from "./components/hero/VideoHero";
-import { prestaData } from "./content/Presta Hero content/prestationContent";
+import { galleryImages } from "./content/Presta Hero content/galleryContent";
 import Preloader from "./components/preloader/preloader";
 import HeroPrestaText from "./components/prestation/HeroPrestaText";
 import ParallaxGallery from "./components/prestation/ParallaxGallery";
@@ -48,7 +48,7 @@ const Home = () => {
             />
             <HeroPrestaText title={"Nos Prestations : "} text={""} />
           </div>
-          <ParallaxGallery data={prestaData} />
+          <ParallaxGallery images={galleryImages} />
         </div>
       </main>
     </>

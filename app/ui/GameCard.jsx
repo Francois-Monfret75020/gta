@@ -10,7 +10,7 @@ const GameCard = ({ title, text, initialX, src }) => {
   return (
     <motion.div
       ref={refCard}
-      className="lg:w-[25%] w-[95%]"
+      className="w-[95%] md:w-[80%] lg:w-[25%]"
       initial={{ x: initialX }}
       animate={isInView ? { x: 0 } : { x: initialX }}
       transition={{ type: "spring", stiffness: 50 }}

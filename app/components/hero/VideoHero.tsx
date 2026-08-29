@@ -54,12 +54,17 @@ const VideoHero = () => {
           animate={{ opacity: isInView ? 1 : 0 }}
           transition={{ duration: 1, delay: 3.2 }}
         >
-          <h1 className="text-6xl font-bold font-montserrat tracking-wide">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-wide whitespace-nowrap">
             Class Cocktails
           </h1>
-          <p className="text-lg font-thin mt-4  font-roboto">
-            Les spécialistes du bar mobile événementiel
-          </p>
+          <h2 className="mt-4 font-montserrat">
+            <span className="block text-xl sm:text-2xl lg:text-3xl font-semibold tracking-wide">
+              Flair & Mixology
+            </span>
+            <span className="block text-base sm:text-lg font-thin font-roboto mt-2">
+              Le show et l'art du cocktail pour enflammer vos événements.
+            </span>
+          </h2>
         </motion.div>
       </div>
       <div className="absolute bottom-12 lg:bottom-14 left-1/2 transform -translate-x-1/2">

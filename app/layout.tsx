@@ -37,6 +37,16 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playwrite+DE+LA+Guides&display=swap"
+          rel="stylesheet"
+        />
         {/* Add structured data here */}
       </head>
       <body

@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 h1 {
-  font-family: var(--font-montserrat);
+  font-family: "Playwrite DE LA Guides", cursive;
 }
 
 .title {
-  font-family: var(--font-montserrat);
+  font-family: "Playwrite DE LA Guides", cursive;
 }
 
 .sub-title {
